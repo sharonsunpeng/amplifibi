@@ -1,103 +1,253 @@
-import Image from "next/image";
+'use client'
 
-export default function Home() {
+import { useSession, SessionProvider } from 'next-auth/react'
+import { useRouter } from 'next/navigation'
+import { useEffect } from 'react'
+import {
+  Box,
+  Container,
+  Typography,
+  Button,
+  Grid,
+  Card,
+  CardContent,
+  Chip,
+} from '@mui/material'
+import {
+  TrendingUp,
+  AccountBalance,
+  Assessment,
+  Security,
+  Speed,
+  CloudSync,
+} from '@mui/icons-material'
+import Link from 'next/link'
+
+const FeatureCard = ({ icon, title, description }: any) => (
+  <Card sx={{ height: '100%', textAlign: 'center' }}>
+    <CardContent sx={{ p: 3 }}>
+      <Box sx={{ mb: 2 }}>
+        {icon}
+      </Box>
+      <Typography variant="h6" component="h3" sx={{ mb: 1, fontWeight: 600 }}>
+        {title}
+      </Typography>
+      <Typography variant="body2" color="text.secondary">
+        {description}
+      </Typography>
+    </CardContent>
+  </Card>
+)
+
+function HomePageContent() {
+  const { data: session, status } = useSession()
+  const router = useRouter()
+
+  useEffect(() => {
+    if (status === 'authenticated') {
+      router.push('/dashboard')
+    }
+  }, [status, router])
+
+  if (status === 'loading') {
+    return (
+      <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
+        <Typography>Loading...</Typography>
+      </Box>
+    )
+  }
+
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <Box sx={{ minHeight: '100vh', backgroundColor: '#f8fafc' }}>
+      {/* Hero Section */}
+      <Container maxWidth="lg" sx={{ pt: 8, pb: 12 }}>
+        <Box sx={{ textAlign: 'center', mb: 8 }}>
+          <Chip 
+            label="Open Source" 
+            sx={{ mb: 3, backgroundColor: '#dcfce7', color: '#166534', fontWeight: 500 }}
+          />
+          <Typography 
+            variant="h1" 
+            component="h1" 
+            sx={{ 
+              fontSize: { xs: '2.5rem', md: '3.5rem' }, 
+              fontWeight: 'bold', 
+              mb: 3,
+              background: 'linear-gradient(135deg, #3b82f6 0%, #1e40af 100%)',
+              backgroundClip: 'text',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+            }}
+          >
+            Smart Business Finance for SMEs
+          </Typography>
+          <Typography 
+            variant="h5" 
+            sx={{ 
+              mb: 4, 
+              color: 'text.secondary',
+              maxWidth: 600,
+              mx: 'auto',
+              lineHeight: 1.6,
+            }}
+          >
+            Open-source accounting with AI-powered insights, tax filing, and open banking integration for New Zealand and Australian businesses.
+          </Typography>
+          <Box sx={{ display: 'flex', gap: 2, justifyContent: 'center', flexWrap: 'wrap' }}>
+            <Button 
+              variant="contained" 
+              size="large" 
+              component={Link} 
+              href="/auth/signup"
+              sx={{ px: 4, py: 1.5 }}
+            >
+              Start Free Trial
+            </Button>
+            <Button 
+              variant="outlined" 
+              size="large" 
+              component={Link} 
+              href="/auth/signin"
+              sx={{ px: 4, py: 1.5 }}
+            >
+              Sign In
+            </Button>
+          </Box>
+        </Box>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+        {/* Features Grid */}
+        <Grid container spacing={4} sx={{ mb: 8 }}>
+          <Grid item xs={12} md={4}>
+            <FeatureCard
+              icon={<AccountBalance sx={{ fontSize: 48, color: '#3b82f6' }} />}
+              title="Complete Accounting"
+              description="Full double-entry bookkeeping, invoicing, and financial reporting. Open source core features free forever."
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+          </Grid>
+          <Grid item xs={12} md={4}>
+            <FeatureCard
+              icon={<CloudSync sx={{ fontSize: 48, color: '#10b981' }} />}
+              title="Open Banking"
+              description="Connect your bank accounts securely via Akahu (NZ) and CDR (AU) for automatic transaction sync."
+            />
+          </Grid>
+          <Grid item xs={12} md={4}>
+            <FeatureCard
+              icon={<Assessment sx={{ fontSize: 48, color: '#8b5cf6' }} />}
+              title="Business Intelligence"
+              description="AI-powered business health scoring, cash flow forecasting, and actionable insights for growth."
+            />
+          </Grid>
+        </Grid>
+
+        {/* Pricing Section */}
+        <Box sx={{ textAlign: 'center', mb: 8 }}>
+          <Typography variant="h3" component="h2" sx={{ mb: 2, fontWeight: 'bold' }}>
+            Simple, Transparent Pricing
+          </Typography>
+          <Typography variant="h6" color="text.secondary" sx={{ mb: 6 }}>
+            Start free, upgrade when you need advanced features
+          </Typography>
+          
+          <Grid container spacing={4} justifyContent="center">
+            <Grid item xs={12} md={5}>
+              <Card>
+                <CardContent sx={{ p: 4 }}>
+                  <Typography variant="h5" sx={{ mb: 1, fontWeight: 600 }}>
+                    Free
+                  </Typography>
+                  <Typography variant="h3" sx={{ mb: 2, fontWeight: 'bold' }}>
+                    $0
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary" sx={{ mb: 3 }}>
+                    Perfect for getting started
+                  </Typography>
+                  <Box sx={{ textAlign: 'left', mb: 4 }}>
+                    <Typography variant="body2" sx={{ mb: 1 }}>✅ Basic accounting features</Typography>
+                    <Typography variant="body2" sx={{ mb: 1 }}>✅ Invoicing & expenses</Typography>
+                    <Typography variant="body2" sx={{ mb: 1 }}>✅ Financial reports</Typography>
+                    <Typography variant="body2" sx={{ mb: 1 }}>✅ Single user</Typography>
+                    <Typography variant="body2" sx={{ mb: 1 }}>✅ Community support</Typography>
+                  </Box>
+                  <Button variant="outlined" fullWidth component={Link} href="/auth/signup">
+                    Get Started Free
+                  </Button>
+                </CardContent>
+              </Card>
+            </Grid>
+            
+            <Grid item xs={12} md={5}>
+              <Card sx={{ border: '2px solid #3b82f6', position: 'relative' }}>
+                <Chip 
+                  label="Most Popular" 
+                  sx={{ 
+                    position: 'absolute',
+                    top: -12,
+                    left: '50%',
+                    transform: 'translateX(-50%)',
+                    backgroundColor: '#3b82f6',
+                    color: 'white',
+                  }}
+                />
+                <CardContent sx={{ p: 4 }}>
+                  <Typography variant="h5" sx={{ mb: 1, fontWeight: 600 }}>
+                    Premium
+                  </Typography>
+                  <Typography variant="h3" sx={{ mb: 2, fontWeight: 'bold' }}>
+                    $39
+                    <Typography component="span" variant="h6" color="text.secondary">
+                      /month
+                    </Typography>
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary" sx={{ mb: 3 }}>
+                    Everything in Free, plus:
+                  </Typography>
+                  <Box sx={{ textAlign: 'left', mb: 4 }}>
+                    <Typography variant="body2" sx={{ mb: 1 }}>✅ Open banking integration</Typography>
+                    <Typography variant="body2" sx={{ mb: 1 }}>✅ GST & income tax filing</Typography>
+                    <Typography variant="body2" sx={{ mb: 1 }}>✅ Business health scoring</Typography>
+                    <Typography variant="body2" sx={{ mb: 1 }}>✅ Advanced analytics</Typography>
+                    <Typography variant="body2" sx={{ mb: 1 }}>✅ Multi-user access</Typography>
+                    <Typography variant="body2" sx={{ mb: 1 }}>✅ Priority support</Typography>
+                  </Box>
+                  <Button variant="contained" fullWidth component={Link} href="/auth/signup">
+                    Start Premium Trial
+                  </Button>
+                </CardContent>
+              </Card>
+            </Grid>
+          </Grid>
+        </Box>
+
+        {/* Trust Indicators */}
+        <Box sx={{ textAlign: 'center' }}>
+          <Typography variant="h6" color="text.secondary" sx={{ mb: 3 }}>
+            Trusted by businesses across New Zealand and Australia
+          </Typography>
+          <Box sx={{ display: 'flex', justifyContent: 'center', gap: 4, flexWrap: 'wrap' }}>
+            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+              <Security sx={{ color: '#10b981' }} />
+              <Typography variant="body2">Bank-grade security</Typography>
+            </Box>
+            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+              <Speed sx={{ color: '#3b82f6' }} />
+              <Typography variant="body2">Fast & reliable</Typography>
+            </Box>
+            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+              <TrendingUp sx={{ color: '#8b5cf6' }} />
+              <Typography variant="body2">Growing community</Typography>
+            </Box>
+          </Box>
+        </Box>
+      </Container>
+    </Box>
+  )
+}
+
+export default function HomePage() {
+  return (
+    <SessionProvider>
+      <HomePageContent />
+    </SessionProvider>
+  )
 }

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmplifiBI - Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 3em;
+        }
+        
+        .logo {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .hero {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .hero h2 {
+            color: #3498db;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        
+        .hero p {
+            color: #7f8c8d;
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+        
+        .feature {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            border-left: 5px solid #3498db;
+        }
+        
+        .feature h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        
+        .feature p {
+            color: #7f8c8d;
+            line-height: 1.6;
+        }
+        
+        .demo-section {
+            background: #ecf0f1;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+        
+        .demo-section h3 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .demo-data {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .metric {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        
+        .metric h4 {
+            color: #3498db;
+            margin-bottom: 10px;
+        }
+        
+        .metric .value {
+            font-size: 2em;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .status {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        
+        .status h3 {
+            color: #155724;
+            margin-bottom: 10px;
+        }
+        
+        .next-steps {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        
+        .next-steps h4 {
+            color: #856404;
+            margin-bottom: 15px;
+        }
+        
+        .next-steps ul {
+            color: #856404;
+            padding-left: 20px;
+        }
+        
+        .next-steps li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <h1>🚀 AmplifiBI</h1>
+            <p style="font-size: 1.2em; color: #7f8c8d;">Smart Business Finance for SMEs</p>
+        </div>
+        
+        <div class="hero">
+            <h2>Your Accounting MVP is Ready!</h2>
+            <p>Complete double-entry bookkeeping system with financial reporting, built with Next.js, TypeScript, and Material-UI</p>
+        </div>
+        
+        <div class="status">
+            <h3>✅ Development Complete</h3>
+            <p>Your full-featured accounting application has been successfully built and is ready for deployment!</p>
+        </div>
+        
+        <div class="features">
+            <div class="feature">
+                <h3>🔐 Authentication System</h3>
+                <p>Complete user registration and login with NextAuth.js, supporting email/password and Google OAuth integration.</p>
+            </div>
+            
+            <div class="feature">
+                <h3>📊 Chart of Accounts</h3>
+                <p>Full account management with asset, liability, equity, revenue, and expense tracking. Color-coded organization and balance monitoring.</p>
+            </div>
+            
+            <div class="feature">
+                <h3>📝 Double-Entry Bookkeeping</h3>
+                <p>Professional transaction system with proper debit/credit logic, automatic balance updates, and journal entry previews.</p>
+            </div>
+            
+            <div class="feature">
+                <h3>📈 Financial Reports</h3>
+                <p>Generate Profit & Loss statements, Balance Sheets, and visual charts. Date range filtering and export capabilities.</p>
+            </div>
+            
+            <div class="feature">
+                <h3>💎 Premium Features</h3>
+                <p>Freemium model ready with $39/month premium tier. Open banking integration and advanced analytics prepared.</p>
+            </div>
+            
+            <div class="feature">
+                <h3>🎨 Professional UI</h3>
+                <p>Material-UI design system with responsive layout, dark/light themes, and intuitive user experience.</p>
+            </div>
+        </div>
+        
+        <div class="demo-section">
+            <h3>📊 Target Metrics Dashboard</h3>
+            <div class="demo-data">
+                <div class="metric">
+                    <h4>Year 1 Target Users</h4>
+                    <div class="value">5,000</div>
+                    <p>3,000 Free + 2,000 Premium</p>
+                </div>
+                
+                <div class="metric">
+                    <h4>Monthly Revenue Target</h4>
+                    <div class="value">$78,000</div>
+                    <p>2,000 × $39/month</p>
+                </div>
+                
+                <div class="metric">
+                    <h4>Annual Revenue Target</h4>
+                    <div class="value">$936K</div>
+                    <p>Net revenue (40% conversion)</p>
+                </div>
+                
+                <div class="metric">
+                    <h4>Market Focus</h4>
+                    <div class="value">NZ + AU</div>
+                    <p>SME businesses</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="next-steps">
+            <h4>🚀 Next Steps for Deployment:</h4>
+            <ul>
+                <li><strong>Database Setup:</strong> Configure PostgreSQL database (local or cloud)</li>
+                <li><strong>Environment Variables:</strong> Set up production environment variables</li>
+                <li><strong>Deploy to Vercel:</strong> Connect GitHub repo and deploy</li>
+                <li><strong>Domain Setup:</strong> Configure custom domain (amplifibi.com)</li>
+                <li><strong>Akahu Integration:</strong> Set up New Zealand banking API</li>
+                <li><strong>Payment Processing:</strong> Add Stripe for premium subscriptions</li>
+            </ul>
+        </div>
+        
+        <div style="text-align: center; margin-top: 40px; padding-top: 30px; border-top: 2px solid #ecf0f1;">
+            <h3 style="color: #2c3e50;">🎉 Congratulations!</h3>
+            <p style="color: #7f8c8d; font-size: 1.1em; margin-top: 10px;">
+                You've successfully built a complete accounting application from scratch.<br>
+                Ready to launch your SaaS business in the New Zealand and Australian markets!
+            </p>
+        </div>
+    </div>
+</body>
+</html>
