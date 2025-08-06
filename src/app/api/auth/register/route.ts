@@ -64,10 +64,22 @@ export async function POST(request: NextRequest) {
       },
       { status: 201 }
     )
-  } catch (error) {
+  } catch (error: any) {
     console.error('Registration error:', error)
+    
+    // More detailed error reporting
+    const errorMessage = error?.message || 'Internal server error'
+    console.error('Detailed error:', {
+      message: error?.message,
+      code: error?.code,
+      meta: error?.meta
+    })
+    
     return NextResponse.json(
-      { message: 'Internal server error' },
+      { 
+        message: 'Registration failed',
+        error: process.env.NODE_ENV === 'development' ? errorMessage : 'Internal server error'
+      },
       { status: 500 }
     )
   }
