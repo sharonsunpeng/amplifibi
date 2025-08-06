@@ -7,8 +7,10 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  // Disable static export to prevent auth issues
+  // Additional build optimizations
   trailingSlash: false,
+  poweredByHeader: false,
+  serverExternalPackages: ['@prisma/client']
 };
 
 export default nextConfig;
