@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from 'react'
 import { useSession } from 'next-auth/react'
+
+export const dynamic = 'force-dynamic'
 import {
   Box,
   Card,

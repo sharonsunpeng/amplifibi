@@ -50,7 +50,12 @@ const bottomMenuItems = [
 ]
 
 export default function Sidebar() {
-  const { data: session } = useSession()
+  const { data: session, status } = useSession()
+  
+  // Return null while loading or if not authenticated
+  if (status === 'loading' || status === 'unauthenticated' || !session) {
+    return null
+  }
   const pathname = usePathname()
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null)
 
