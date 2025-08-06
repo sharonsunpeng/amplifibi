@@ -5,9 +5,10 @@ import { prisma } from '@/lib/prisma'
 
 export async function PUT(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
+    const resolvedParams = await params
     const session = await getServerSession(authOptions)
     
     if (!session?.user?.id) {
@@ -49,7 +50,7 @@ export async function PUT(
     // Get existing transaction
     const existingTransaction = await prisma.transaction.findFirst({
       where: {
-        id: params.id,
+        id: resolvedParams.id,
         userId: session.user.id,
       },
       include: {
@@ -129,7 +130,7 @@ export async function PUT(
 
       // Update the transaction
       const updatedTransaction = await tx.transaction.update({
-        where: { id: params.id },
+        where: { id: resolvedParams.id },
         data: {
           date: new Date(date),
           description,
@@ -203,9 +204,10 @@ export async function PUT(
 
 export async function DELETE(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
+    const resolvedParams = await params
     const session = await getServerSession(authOptions)
     
     if (!session?.user?.id) {
@@ -215,7 +217,7 @@ export async function DELETE(
     // Get existing transaction
     const existingTransaction = await prisma.transaction.findFirst({
       where: {
-        id: params.id,
+        id: resolvedParams.id,
         userId: session.user.id,
       },
       include: {
@@ -262,7 +264,7 @@ export async function DELETE(
 
       // Delete the transaction
       await tx.transaction.delete({
-        where: { id: params.id },
+        where: { id: resolvedParams.id },
       })
     })
 
