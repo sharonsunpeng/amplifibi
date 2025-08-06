@@ -21,10 +21,39 @@ export async function POST(request: NextRequest) {
       )
     }
 
+    // Test database connection first
+    try {
+      await prisma.$connect()
+      console.log('Database connected successfully')
+    } catch (dbError) {
+      console.error('Database connection failed:', dbError)
+      return NextResponse.json(
+        { message: 'Database connection failed. Please try again later.' },
+        { status: 503 }
+      )
+    }
+
     // Check if user already exists
-    const existingUser = await prisma.user.findUnique({
-      where: { email }
-    })
+    let existingUser
+    try {
+      existingUser = await prisma.user.findUnique({
+        where: { email }
+      })
+    } catch (findError: any) {
+      console.error('User lookup failed:', findError)
+      
+      // If table doesn't exist, provide a helpful error
+      if (findError.code === 'P2021' || findError.message.includes('does not exist')) {
+        return NextResponse.json(
+          { 
+            message: 'Database not initialized. Please contact support.',
+            needsSetup: true
+          },
+          { status: 503 }
+        )
+      }
+      throw findError
+    }
 
     if (existingUser) {
       return NextResponse.json(
@@ -36,26 +65,44 @@ export async function POST(request: NextRequest) {
     // Hash password
     const hashedPassword = await bcrypt.hash(password, 12)
 
-    // Create user
-    const user = await prisma.user.create({
-      data: {
-        name,
-        email,
-        password: hashedPassword,
-        subscriptionTier: 'FREE',
-        subscriptionStatus: 'ACTIVE',
-      },
-      select: {
-        id: true,
-        name: true,
-        email: true,
-        subscriptionTier: true,
-        createdAt: true,
-      },
-    })
+    // Create user with retry logic
+    let user
+    try {
+      user = await prisma.user.create({
+        data: {
+          name,
+          email,
+          password: hashedPassword,
+          subscriptionTier: 'FREE',
+          subscriptionStatus: 'ACTIVE',
+        },
+        select: {
+          id: true,
+          name: true,
+          email: true,
+          subscriptionTier: true,
+          createdAt: true,
+        },
+      })
+    } catch (createError: any) {
+      console.error('User creation failed:', createError)
+      
+      return NextResponse.json(
+        { 
+          message: 'Failed to create user account',
+          error: createError.message,
+          code: createError.code
+        },
+        { status: 500 }
+      )
+    }
 
-    // Create default chart of accounts for new user
-    await createDefaultAccounts(user.id)
+    // Try to create default accounts, but don't fail if it doesn't work
+    try {
+      await createDefaultAccounts(user.id)
+    } catch (accountError) {
+      console.warn('Default accounts creation failed, but user was created:', accountError)
+    }
 
     return NextResponse.json(
       { 
@@ -67,18 +114,12 @@ export async function POST(request: NextRequest) {
   } catch (error: any) {
     console.error('Registration error:', error)
     
-    // More detailed error reporting
-    const errorMessage = error?.message || 'Internal server error'
-    console.error('Detailed error:', {
-      message: error?.message,
-      code: error?.code,
-      meta: error?.meta
-    })
-    
     return NextResponse.json(
       { 
         message: 'Registration failed',
-        error: process.env.NODE_ENV === 'development' ? errorMessage : 'Internal server error'
+        error: error?.message || 'Internal server error',
+        code: error?.code,
+        details: process.env.NODE_ENV === 'development' ? error : undefined
       },
       { status: 500 }
     )
