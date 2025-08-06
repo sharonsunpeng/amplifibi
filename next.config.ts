@@ -7,13 +7,8 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  experimental: {
-    // Disable static optimization for pages that use authentication
-    staticPageGenerationTimeout: 0,
-  },
-  // Disable static generation for auth-dependent routes
+  // Disable static export to prevent auth issues
   trailingSlash: false,
-  output: 'standalone',
 };
 
 export default nextConfig;
