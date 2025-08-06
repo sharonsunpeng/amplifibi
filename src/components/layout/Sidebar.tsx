@@ -37,15 +37,15 @@ const DRAWER_WIDTH = 280
 
 const menuItems = [
   { text: 'Dashboard', icon: <Dashboard />, href: '/dashboard' },
-  { text: 'Accounts', icon: <AccountBalance />, href: '/accounts' },
-  { text: 'Transactions', icon: <Receipt />, href: '/transactions' },
-  { text: 'Reports', icon: <Assessment />, href: '/reports' },
-  { text: 'Business Health', icon: <TrendingUp />, href: '/health', premium: true },
-  { text: 'Tax Filing', icon: <CreditCard />, href: '/tax', premium: true },
+  { text: 'Accounts', icon: <AccountBalance />, href: '/dashboard/accounts' },
+  { text: 'Transactions', icon: <Receipt />, href: '/dashboard/transactions' },
+  { text: 'Reports', icon: <Assessment />, href: '/dashboard/reports' },
+  { text: 'Business Health', icon: <TrendingUp />, href: '/dashboard/health', premium: true },
+  { text: 'Tax Filing', icon: <CreditCard />, href: '/dashboard/tax', premium: true },
 ]
 
 const bottomMenuItems = [
-  { text: 'Settings', icon: <Settings />, href: '/settings' },
+  { text: 'Settings', icon: <Settings />, href: '/dashboard/settings' },
   { text: 'Help', icon: <Help />, href: '/help' },
 ]
 

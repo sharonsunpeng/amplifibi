@@ -77,8 +77,7 @@ function TabPanel(props: TabPanelProps) {
 }
 
 export default function ReportsPage() {
-  // Skip useSession during SSR/build
-  const { data: session } = typeof window !== 'undefined' ? useSession() : { data: null }
+  const { data: session } = useSession()
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
   const [reportData, setReportData] = useState<ReportData | null>(null)
