@@ -58,7 +58,8 @@ const AccountTypeColors: Record<string, string> = {
 }
 
 export default function AccountsPage() {
-  const { data: session } = useSession()
+  // Skip useSession during SSR/build
+  const { data: session } = typeof window !== 'undefined' ? useSession() : { data: null }
   const [accounts, setAccounts] = useState<Account[]>([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')

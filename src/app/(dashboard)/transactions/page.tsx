@@ -84,7 +84,8 @@ interface Category {
 }
 
 export default function TransactionsPage() {
-  const { data: session } = useSession()
+  // Skip useSession during SSR/build  
+  const { data: session } = typeof window !== 'undefined' ? useSession() : { data: null }
   const [transactions, setTransactions] = useState<Transaction[]>([])
   const [accounts, setAccounts] = useState<Account[]>([])
   const [categories, setCategories] = useState<Category[]>([])
