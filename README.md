@@ -1,4 +1,13 @@
+# AmplifiBI - Smart Business Finance SaaS
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+## Features
+- Complete accounting system with double-entry bookkeeping
+- User authentication with NextAuth.js
+- PostgreSQL database with Prisma ORM
+- Material-UI design system
+- Financial reports and analytics
 
 ## Getting Started
 
