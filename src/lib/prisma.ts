@@ -4,9 +4,15 @@ const globalForPrisma = globalThis as unknown as {
   prisma: PrismaClient | undefined
 }
 
-// Handle Vercel build environment gracefully
+// Create Prisma client with proper error handling for Vercel
 export const prisma = globalForPrisma.prisma ?? new PrismaClient({
-  log: process.env.NODE_ENV === 'development' ? ['error', 'warn'] : ['error']
+  log: process.env.NODE_ENV === 'development' ? ['error', 'warn'] : ['error'],
+  errorFormat: 'minimal',
 })
 
 if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = prisma
+
+// Graceful connection handling
+prisma.$connect().catch((err) => {
+  console.warn('Database connection failed during initialization:', err.message)
+})
