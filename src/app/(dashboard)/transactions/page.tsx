@@ -84,9 +84,7 @@ interface Category {
 }
 
 export default function TransactionsPage() {
-  // Temporarily commented for build - will fix after deployment  
-  // const { data: session } = useSession()
-  const session = { user: { id: 'temp' } } // Temporary for build
+  const { data: session } = useSession()
   const [transactions, setTransactions] = useState<Transaction[]>([])
   const [accounts, setAccounts] = useState<Account[]>([])
   const [categories, setCategories] = useState<Category[]>([])

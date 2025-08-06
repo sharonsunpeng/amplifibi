@@ -13,16 +13,53 @@ export default function DashboardLayout({
 }: {
   children: React.ReactNode
 }) {
-  // Temporarily disabled for build - will fix after deployment
-  // const { data: session, status } = useSession()
-  // const router = useRouter()
+  const { data: session, status } = useSession()
+  const router = useRouter()
 
-  // useEffect(() => {
-  //   if (status === 'unauthenticated') {
-  //     router.push('/')
-  //   }
-  // }, [status, router])
+  useEffect(() => {
+    if (status === 'unauthenticated') {
+      router.push('/')
+    }
+  }, [status, router])
 
-  // Temporarily return children directly for build
+  if (status === 'loading') {
+    return (
+      <Box 
+        sx={{ 
+          display: 'flex', 
+          flexDirection: 'column',
+          alignItems: 'center', 
+          justifyContent: 'center', 
+          minHeight: '100vh',
+          gap: 2
+        }}
+      >
+        <CircularProgress />
+        <Typography>Loading...</Typography>
+      </Box>
+    )
+  }
+
+  if (status === 'unauthenticated' || !session) {
+    return (
+      <Box 
+        sx={{ 
+          display: 'flex', 
+          flexDirection: 'column',
+          alignItems: 'center', 
+          justifyContent: 'center', 
+          minHeight: '100vh',
+          gap: 2,
+          p: 3
+        }}
+      >
+        <Typography variant="h5">Access Restricted</Typography>
+        <Typography color="text.secondary">
+          Please sign in to access this page.
+        </Typography>
+      </Box>
+    )
+  }
+
   return <>{children}</>
 }
