@@ -29,6 +29,8 @@ import {
   Logout,
   CreditCard,
   TrendingUp,
+  Description,
+  People,
 } from '@mui/icons-material'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -37,11 +39,13 @@ const DRAWER_WIDTH = 280
 
 const menuItems = [
   { text: 'Dashboard', icon: <Dashboard />, href: '/dashboard' },
+  { text: 'Customers', icon: <People />, href: '/dashboard/customers' },
+  { text: 'Invoices', icon: <Description />, href: '/dashboard/invoices' },
   { text: 'Accounts', icon: <AccountBalance />, href: '/dashboard/accounts' },
   { text: 'Transactions', icon: <Receipt />, href: '/dashboard/transactions' },
   { text: 'Reports', icon: <Assessment />, href: '/dashboard/reports' },
-  { text: 'Business Health', icon: <TrendingUp />, href: '/dashboard/health', premium: true },
-  { text: 'Tax Filing', icon: <CreditCard />, href: '/dashboard/tax', premium: true },
+  { text: 'Health Score', icon: <TrendingUp />, href: '/dashboard/health-score' },
+  { text: 'Tax Filing', icon: <CreditCard />, href: '/dashboard/tax' },
 ]
 
 const bottomMenuItems = [
@@ -51,13 +55,13 @@ const bottomMenuItems = [
 
 export default function Sidebar() {
   const { data: session, status } = useSession()
+  const pathname = usePathname()
+  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null)
   
   // Return null while loading or if not authenticated
   if (status === 'loading' || status === 'unauthenticated' || !session) {
     return null
   }
-  const pathname = usePathname()
-  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null)
 
   const handleUserMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget)

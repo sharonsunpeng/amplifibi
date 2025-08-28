@@ -9,7 +9,7 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "sqlite"
   url      = env("DATABASE_URL")
 }
 
@@ -69,6 +69,11 @@ model User {
   subscriptionStatus SubscriptionStatus @default(ACTIVE)
   subscriptionEndsAt DateTime?
   
+  // GST Settings
+  gstRegistered Boolean @default(false)
+  gstNumber String?
+  gstReturnFrequency GstReturnFrequency @default(BI_MONTHLY)
+  
   // NextAuth Relations
   accounts      AuthAccount[]
   sessions      Session[]
@@ -77,6 +82,8 @@ model User {
   businessAccounts BusinessAccount[]
   transactions Transaction[]
   categories Category[]
+  customers Customer[]
+  invoices Invoice[]
   
   @@map("users")
 }
@@ -131,6 +138,10 @@ model Transaction {
   bankTransactionId String? @unique
   bankImported      Boolean @default(false)
   
+  // Invoice relation
+  invoiceId String?
+  invoice   Invoice? @relation(fields: [invoiceId], references: [id])
+  
   // Relations
   userId String
   user   User @relation(fields: [userId], references: [id], onDelete: Cascade)
@@ -160,6 +171,106 @@ model Category {
   @@map("categories")
 }
 
+// Customer Management
+model Customer {
+  id          String  @id @default(cuid())
+  name        String
+  email       String?
+  phone       String?
+  
+  // Address
+  address     String?
+  city        String?
+  state       String?
+  postalCode  String?
+  country     String? @default("New Zealand")
+  
+  // Business details
+  companyName String?
+  taxNumber   String? // GST number in NZ
+  
+  // Payment terms
+  paymentTerms Int @default(30) // Days
+  
+  // Relations
+  userId   String
+  user     User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  invoices Invoice[]
+  
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  
+  @@map("customers")
+}
+
+// Invoice Management
+model Invoice {
+  id             String        @id @default(cuid())
+  invoiceNumber  String        @unique
+  status         InvoiceStatus @default(DRAFT)
+  
+  // Dates
+  issueDate      DateTime
+  dueDate        DateTime
+  paidDate       DateTime?
+  
+  // Amounts
+  subtotal       Decimal       @default(0)
+  taxRate        Decimal       @default(0.15) // 15% GST in NZ
+  taxAmount      Decimal       @default(0)
+  total          Decimal       @default(0)
+  paidAmount     Decimal       @default(0)
+  
+  // GST Settings
+  gstInclusive   Boolean       @default(true)  // true = GST inclusive, false = GST exclusive
+  exemptFromGst  Boolean       @default(false) // true = GST exempt transaction
+  
+  // Notes
+  notes          String?
+  termsConditions String?
+  
+  // Customer
+  customerId     String
+  customer       Customer @relation(fields: [customerId], references: [id])
+  
+  // Line items
+  items          InvoiceItem[]
+  
+  // Related transactions
+  transactions   Transaction[]
+  
+  // Relations
+  userId         String
+  user           User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+  
+  @@map("invoices")
+}
+
+// Invoice Line Items
+model InvoiceItem {
+  id          String  @id @default(cuid())
+  description String
+  quantity    Decimal @default(1)
+  unitPrice   Decimal
+  total       Decimal
+  
+  // Tax
+  taxRate     Decimal @default(0.15)
+  taxAmount   Decimal @default(0)
+  
+  // Relations
+  invoiceId   String
+  invoice     Invoice @relation(fields: [invoiceId], references: [id], onDelete: Cascade)
+  
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  
+  @@map("invoice_items")
+}
+
 // Enums
 enum AccountType {
   ASSET
@@ -178,4 +289,18 @@ enum SubscriptionStatus {
   ACTIVE
   CANCELLED
   PAST_DUE
+}
+
+enum InvoiceStatus {
+  DRAFT
+  SENT
+  VIEWED
+  OVERDUE
+  PAID
+  CANCELLED
+}
+
+enum GstReturnFrequency {
+  BI_MONTHLY    // Every 2 months (standard)
+  SIX_MONTHLY   // Every 6 months (small business)
 }

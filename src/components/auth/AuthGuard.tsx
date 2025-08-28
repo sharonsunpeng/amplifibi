@@ -2,33 +2,22 @@
 
 import { useSession } from 'next-auth/react'
 import { useRouter } from 'next/navigation'
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { Box, CircularProgress, Typography } from '@mui/material'
-import MainLayout from '@/components/layout/MainLayout'
 
-export default function DashboardLayout({
-  children,
-}: {
+interface AuthGuardProps {
   children: React.ReactNode
-}) {
+}
+
+export default function AuthGuard({ children }: AuthGuardProps) {
   const { data: session, status } = useSession()
   const router = useRouter()
-  const [isClient, setIsClient] = useState(false)
 
   useEffect(() => {
-    setIsClient(true)
-  }, [])
-
-  useEffect(() => {
-    if (isClient && status === 'unauthenticated') {
-      router.push('/')
+    if (status === 'unauthenticated') {
+      router.push('/auth/signin')
     }
-  }, [isClient, status, router])
-
-  // During SSR or before client-side hydration
-  if (!isClient) {
-    return <MainLayout>{children}</MainLayout>
-  }
+  }, [status, router])
 
   if (status === 'loading') {
     return (
@@ -38,17 +27,17 @@ export default function DashboardLayout({
           flexDirection: 'column',
           alignItems: 'center', 
           justifyContent: 'center', 
-          minHeight: '100vh',
-          gap: 2
+          minHeight: '50vh',
+          gap: 2 
         }}
       >
         <CircularProgress />
-        <Typography>Loading...</Typography>
+        <Typography>Checking authentication...</Typography>
       </Box>
     )
   }
 
-  if (status === 'unauthenticated' || !session) {
+  if (status === 'unauthenticated') {
     return (
       <Box 
         sx={{ 
@@ -56,18 +45,21 @@ export default function DashboardLayout({
           flexDirection: 'column',
           alignItems: 'center', 
           justifyContent: 'center', 
-          minHeight: '100vh',
-          gap: 2,
-          p: 3
+          minHeight: '50vh',
+          gap: 2 
         }}
       >
-        <Typography variant="h5">Access Restricted</Typography>
+        <Typography variant="h6">Please sign in to continue</Typography>
         <Typography color="text.secondary">
-          Please sign in to access the dashboard.
+          Redirecting to sign in page...
         </Typography>
       </Box>
     )
   }
 
-  return <MainLayout>{children}</MainLayout>
+  if (!session) {
+    return null
+  }
+
+  return <>{children}</>
 }

@@ -1,0 +1,2234 @@
+
+> amplifibi@0.1.0 dev
+> next dev --turbopack
+
+   ▲ Next.js 15.3.4 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://10.32.59.233:3001
+   - Environments: .env
+
+ ✓ Starting...
+ ✓ Ready in 611ms
+ ○ Compiling / ...
+ ✓ Compiled / in 1488ms
+ HEAD / 200 in 1625ms
+ GET / 200 in 65ms
+ ✓ Compiled /api/auth/[...nextauth] in 292ms
+ GET /favicon.ico?favicon.45db1c09.ico 200 in 466ms
+ GET /api/auth/session 200 in 495ms
+ ○ Compiling /auth/signup ...
+ ✓ Compiled /auth/signup in 530ms
+ GET /auth/signup 200 in 542ms
+ ✓ Compiled /api/auth/register in 161ms
+Database connected successfully
+ POST /api/auth/register 201 in 670ms
+ GET /api/auth/providers 200 in 9ms
+ GET /api/auth/csrf 200 in 7ms
+ POST /api/auth/callback/credentials 200 in 220ms
+ ✓ Compiled /dashboard in 470ms
+ GET /dashboard 200 in 481ms
+ ✓ Compiled /dashboard in 8ms
+MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
+
+MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+MUI Grid: The `lg` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+ GET /dashboard 200 in 206ms
+ GET /favicon.ico?favicon.45db1c09.ico 200 in 215ms
+ GET /favicon.ico 200 in 213ms
+ ⨯ ./src/app/layout.tsx:5:1
+Module not found: Can't resolve '@/components/providers/SessionProvider'
+[0m [90m 3 |[39m [36mimport[39m [32m"./globals.css"[39m[33m;[39m[0m
+[0m [90m 4 |[39m [36mimport[39m [33mThemeProvider[39m [36mfrom[39m [32m"@/components/providers/ThemeProvider"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mSessionProvider[39m [36mfrom[39m [32m"@/components/providers/SessionProvider"[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 6 |[39m[0m
+[0m [90m 7 |[39m [36mconst[39m inter [33m=[39m [33mInter[39m({[0m
+[0m [90m 8 |[39m   subsets[33m:[39m [[32m"latin"[39m][33m,[39m[0m
+
+Import map: aliased to relative './src/components/providers/SessionProvider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./src/app/layout.tsx:5:1
+Module not found: Can't resolve '@/components/providers/SessionProvider'
+[0m [90m 3 |[39m [36mimport[39m [32m"./globals.css"[39m[33m;[39m[0m
+[0m [90m 4 |[39m [36mimport[39m [33mThemeProvider[39m [36mfrom[39m [32m"@/components/providers/ThemeProvider"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mSessionProvider[39m [36mfrom[39m [32m"@/components/providers/SessionProvider"[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 6 |[39m[0m
+[0m [90m 7 |[39m [36mconst[39m inter [33m=[39m [33mInter[39m({[0m
+[0m [90m 8 |[39m   subsets[33m:[39m [[32m"latin"[39m][33m,[39m[0m
+
+Import map: aliased to relative './src/components/providers/SessionProvider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./src/app/layout.tsx:5:1
+Module not found: Can't resolve '@/components/providers/SessionProvider'
+[0m [90m 3 |[39m [36mimport[39m [32m"./globals.css"[39m[33m;[39m[0m
+[0m [90m 4 |[39m [36mimport[39m [33mThemeProvider[39m [36mfrom[39m [32m"@/components/providers/ThemeProvider"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mSessionProvider[39m [36mfrom[39m [32m"@/components/providers/SessionProvider"[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 6 |[39m[0m
+[0m [90m 7 |[39m [36mconst[39m inter [33m=[39m [33mInter[39m({[0m
+[0m [90m 8 |[39m   subsets[33m:[39m [[32m"latin"[39m][33m,[39m[0m
+
+Import map: aliased to relative './src/components/providers/SessionProvider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./src/app/layout.tsx:5:1
+Module not found: Can't resolve '@/components/providers/SessionProvider'
+[0m [90m 3 |[39m [36mimport[39m [32m"./globals.css"[39m[33m;[39m[0m
+[0m [90m 4 |[39m [36mimport[39m [33mThemeProvider[39m [36mfrom[39m [32m"@/components/providers/ThemeProvider"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mSessionProvider[39m [36mfrom[39m [32m"@/components/providers/SessionProvider"[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 6 |[39m[0m
+[0m [90m 7 |[39m [36mconst[39m inter [33m=[39m [33mInter[39m({[0m
+[0m [90m 8 |[39m   subsets[33m:[39m [[32m"latin"[39m][33m,[39m[0m
+
+Import map: aliased to relative './src/components/providers/SessionProvider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./src/app/layout.tsx:5:1
+Module not found: Can't resolve '@/components/providers/SessionProvider'
+[0m [90m 3 |[39m [36mimport[39m [32m"./globals.css"[39m[33m;[39m[0m
+[0m [90m 4 |[39m [36mimport[39m [33mThemeProvider[39m [36mfrom[39m [32m"@/components/providers/ThemeProvider"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mSessionProvider[39m [36mfrom[39m [32m"@/components/providers/SessionProvider"[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 6 |[39m[0m
+[0m [90m 7 |[39m [36mconst[39m inter [33m=[39m [33mInter[39m({[0m
+[0m [90m 8 |[39m   subsets[33m:[39m [[32m"latin"[39m][33m,[39m[0m
+
+Import map: aliased to relative './src/components/providers/SessionProvider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./src/app/layout.tsx:5:1
+Module not found: Can't resolve '@/components/providers/SessionProvider'
+[0m [90m 3 |[39m [36mimport[39m [32m"./globals.css"[39m[33m;[39m[0m
+[0m [90m 4 |[39m [36mimport[39m [33mThemeProvider[39m [36mfrom[39m [32m"@/components/providers/ThemeProvider"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mSessionProvider[39m [36mfrom[39m [32m"@/components/providers/SessionProvider"[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 6 |[39m[0m
+[0m [90m 7 |[39m [36mconst[39m inter [33m=[39m [33mInter[39m({[0m
+[0m [90m 8 |[39m   subsets[33m:[39m [[32m"latin"[39m][33m,[39m[0m
+
+Import map: aliased to relative './src/components/providers/SessionProvider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./src/app/layout.tsx:5:1
+Module not found: Can't resolve '@/components/providers/SessionProvider'
+[0m [90m 3 |[39m [36mimport[39m [32m"./globals.css"[39m[33m;[39m[0m
+[0m [90m 4 |[39m [36mimport[39m [33mThemeProvider[39m [36mfrom[39m [32m"@/components/providers/ThemeProvider"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mSessionProvider[39m [36mfrom[39m [32m"@/components/providers/SessionProvider"[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 6 |[39m[0m
+[0m [90m 7 |[39m [36mconst[39m inter [33m=[39m [33mInter[39m({[0m
+[0m [90m 8 |[39m   subsets[33m:[39m [[32m"latin"[39m][33m,[39m[0m
+
+Import map: aliased to relative './src/components/providers/SessionProvider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./src/app/layout.tsx:5:1
+Module not found: Can't resolve '@/components/providers/SessionProvider'
+[0m [90m 3 |[39m [36mimport[39m [32m"./globals.css"[39m[33m;[39m[0m
+[0m [90m 4 |[39m [36mimport[39m [33mThemeProvider[39m [36mfrom[39m [32m"@/components/providers/ThemeProvider"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mSessionProvider[39m [36mfrom[39m [32m"@/components/providers/SessionProvider"[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 6 |[39m[0m
+[0m [90m 7 |[39m [36mconst[39m inter [33m=[39m [33mInter[39m({[0m
+[0m [90m 8 |[39m   subsets[33m:[39m [[32m"latin"[39m][33m,[39m[0m
+
+Import map: aliased to relative './src/components/providers/SessionProvider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./src/app/layout.tsx:5:1
+Module not found: Can't resolve '@/components/providers/SessionProvider'
+[0m [90m 3 |[39m [36mimport[39m [32m"./globals.css"[39m[33m;[39m[0m
+[0m [90m 4 |[39m [36mimport[39m [33mThemeProvider[39m [36mfrom[39m [32m"@/components/providers/ThemeProvider"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mSessionProvider[39m [36mfrom[39m [32m"@/components/providers/SessionProvider"[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 6 |[39m[0m
+[0m [90m 7 |[39m [36mconst[39m inter [33m=[39m [33mInter[39m({[0m
+[0m [90m 8 |[39m   subsets[33m:[39m [[32m"latin"[39m][33m,[39m[0m
+
+Import map: aliased to relative './src/components/providers/SessionProvider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./src/app/layout.tsx:5:1
+Module not found: Can't resolve '@/components/providers/SessionProvider'
+[0m [90m 3 |[39m [36mimport[39m [32m"./globals.css"[39m[33m;[39m[0m
+[0m [90m 4 |[39m [36mimport[39m [33mThemeProvider[39m [36mfrom[39m [32m"@/components/providers/ThemeProvider"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mSessionProvider[39m [36mfrom[39m [32m"@/components/providers/SessionProvider"[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 6 |[39m[0m
+[0m [90m 7 |[39m [36mconst[39m inter [33m=[39m [33mInter[39m({[0m
+[0m [90m 8 |[39m   subsets[33m:[39m [[32m"latin"[39m][33m,[39m[0m
+
+Import map: aliased to relative './src/components/providers/SessionProvider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./src/app/layout.tsx:5:1
+Module not found: Can't resolve '@/components/providers/SessionProvider'
+[0m [90m 3 |[39m [36mimport[39m [32m"./globals.css"[39m[33m;[39m[0m
+[0m [90m 4 |[39m [36mimport[39m [33mThemeProvider[39m [36mfrom[39m [32m"@/components/providers/ThemeProvider"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mSessionProvider[39m [36mfrom[39m [32m"@/components/providers/SessionProvider"[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 6 |[39m[0m
+[0m [90m 7 |[39m [36mconst[39m inter [33m=[39m [33mInter[39m({[0m
+[0m [90m 8 |[39m   subsets[33m:[39m [[32m"latin"[39m][33m,[39m[0m
+
+Import map: aliased to relative './src/components/providers/SessionProvider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./src/app/layout.tsx:5:1
+Module not found: Can't resolve '@/components/providers/SessionProvider'
+[0m [90m 3 |[39m [36mimport[39m [32m"./globals.css"[39m[33m;[39m[0m
+[0m [90m 4 |[39m [36mimport[39m [33mThemeProvider[39m [36mfrom[39m [32m"@/components/providers/ThemeProvider"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mSessionProvider[39m [36mfrom[39m [32m"@/components/providers/SessionProvider"[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 6 |[39m[0m
+[0m [90m 7 |[39m [36mconst[39m inter [33m=[39m [33mInter[39m({[0m
+[0m [90m 8 |[39m   subsets[33m:[39m [[32m"latin"[39m][33m,[39m[0m
+
+Import map: aliased to relative './src/components/providers/SessionProvider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./src/app/layout.tsx:5:1
+Module not found: Can't resolve '@/components/providers/SessionProvider'
+[0m [90m 3 |[39m [36mimport[39m [32m"./globals.css"[39m[33m;[39m[0m
+[0m [90m 4 |[39m [36mimport[39m [33mThemeProvider[39m [36mfrom[39m [32m"@/components/providers/ThemeProvider"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mSessionProvider[39m [36mfrom[39m [32m"@/components/providers/SessionProvider"[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 6 |[39m[0m
+[0m [90m 7 |[39m [36mconst[39m inter [33m=[39m [33mInter[39m({[0m
+[0m [90m 8 |[39m   subsets[33m:[39m [[32m"latin"[39m][33m,[39m[0m
+
+Import map: aliased to relative './src/components/providers/SessionProvider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./src/app/layout.tsx:5:1
+Module not found: Can't resolve '@/components/providers/SessionProvider'
+[0m [90m 3 |[39m [36mimport[39m [32m"./globals.css"[39m[33m;[39m[0m
+[0m [90m 4 |[39m [36mimport[39m [33mThemeProvider[39m [36mfrom[39m [32m"@/components/providers/ThemeProvider"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mSessionProvider[39m [36mfrom[39m [32m"@/components/providers/SessionProvider"[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 6 |[39m[0m
+[0m [90m 7 |[39m [36mconst[39m inter [33m=[39m [33mInter[39m({[0m
+[0m [90m 8 |[39m   subsets[33m:[39m [[32m"latin"[39m][33m,[39m[0m
+
+Import map: aliased to relative './src/components/providers/SessionProvider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./src/app/layout.tsx:5:1
+Module not found: Can't resolve '@/components/providers/SessionProvider'
+[0m [90m 3 |[39m [36mimport[39m [32m"./globals.css"[39m[33m;[39m[0m
+[0m [90m 4 |[39m [36mimport[39m [33mThemeProvider[39m [36mfrom[39m [32m"@/components/providers/ThemeProvider"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mSessionProvider[39m [36mfrom[39m [32m"@/components/providers/SessionProvider"[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 6 |[39m[0m
+[0m [90m 7 |[39m [36mconst[39m inter [33m=[39m [33mInter[39m({[0m
+[0m [90m 8 |[39m   subsets[33m:[39m [[32m"latin"[39m][33m,[39m[0m
+
+Import map: aliased to relative './src/components/providers/SessionProvider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./src/app/layout.tsx:5:1
+Module not found: Can't resolve '@/components/providers/SessionProvider'
+[0m [90m 3 |[39m [36mimport[39m [32m"./globals.css"[39m[33m;[39m[0m
+[0m [90m 4 |[39m [36mimport[39m [33mThemeProvider[39m [36mfrom[39m [32m"@/components/providers/ThemeProvider"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mSessionProvider[39m [36mfrom[39m [32m"@/components/providers/SessionProvider"[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 6 |[39m[0m
+[0m [90m 7 |[39m [36mconst[39m inter [33m=[39m [33mInter[39m({[0m
+[0m [90m 8 |[39m   subsets[33m:[39m [[32m"latin"[39m][33m,[39m[0m
+
+Import map: aliased to relative './src/components/providers/SessionProvider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./src/app/layout.tsx:5:1
+Module not found: Can't resolve '@/components/providers/SessionProvider'
+[0m [90m 3 |[39m [36mimport[39m [32m"./globals.css"[39m[33m;[39m[0m
+[0m [90m 4 |[39m [36mimport[39m [33mThemeProvider[39m [36mfrom[39m [32m"@/components/providers/ThemeProvider"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mSessionProvider[39m [36mfrom[39m [32m"@/components/providers/SessionProvider"[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 6 |[39m[0m
+[0m [90m 7 |[39m [36mconst[39m inter [33m=[39m [33mInter[39m({[0m
+[0m [90m 8 |[39m   subsets[33m:[39m [[32m"latin"[39m][33m,[39m[0m
+
+Import map: aliased to relative './src/components/providers/SessionProvider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./src/app/layout.tsx:5:1
+Module not found: Can't resolve '@/components/providers/SessionProvider'
+[0m [90m 3 |[39m [36mimport[39m [32m"./globals.css"[39m[33m;[39m[0m
+[0m [90m 4 |[39m [36mimport[39m [33mThemeProvider[39m [36mfrom[39m [32m"@/components/providers/ThemeProvider"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mSessionProvider[39m [36mfrom[39m [32m"@/components/providers/SessionProvider"[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 6 |[39m[0m
+[0m [90m 7 |[39m [36mconst[39m inter [33m=[39m [33mInter[39m({[0m
+[0m [90m 8 |[39m   subsets[33m:[39m [[32m"latin"[39m][33m,[39m[0m
+
+Import map: aliased to relative './src/components/providers/SessionProvider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./src/app/layout.tsx:5:1
+Module not found: Can't resolve '@/components/providers/SessionProvider'
+[0m [90m 3 |[39m [36mimport[39m [32m"./globals.css"[39m[33m;[39m[0m
+[0m [90m 4 |[39m [36mimport[39m [33mThemeProvider[39m [36mfrom[39m [32m"@/components/providers/ThemeProvider"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mSessionProvider[39m [36mfrom[39m [32m"@/components/providers/SessionProvider"[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 6 |[39m[0m
+[0m [90m 7 |[39m [36mconst[39m inter [33m=[39m [33mInter[39m({[0m
+[0m [90m 8 |[39m   subsets[33m:[39m [[32m"latin"[39m][33m,[39m[0m
+
+Import map: aliased to relative './src/components/providers/SessionProvider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./src/app/layout.tsx:5:1
+Module not found: Can't resolve '@/components/providers/SessionProvider'
+[0m [90m 3 |[39m [36mimport[39m [32m"./globals.css"[39m[33m;[39m[0m
+[0m [90m 4 |[39m [36mimport[39m [33mThemeProvider[39m [36mfrom[39m [32m"@/components/providers/ThemeProvider"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mSessionProvider[39m [36mfrom[39m [32m"@/components/providers/SessionProvider"[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 6 |[39m[0m
+[0m [90m 7 |[39m [36mconst[39m inter [33m=[39m [33mInter[39m({[0m
+[0m [90m 8 |[39m   subsets[33m:[39m [[32m"latin"[39m][33m,[39m[0m
+
+Import map: aliased to relative './src/components/providers/SessionProvider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./src/app/layout.tsx:5:1
+Module not found: Can't resolve '@/components/providers/SessionProvider'
+[0m [90m 3 |[39m [36mimport[39m [32m"./globals.css"[39m[33m;[39m[0m
+[0m [90m 4 |[39m [36mimport[39m [33mThemeProvider[39m [36mfrom[39m [32m"@/components/providers/ThemeProvider"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mSessionProvider[39m [36mfrom[39m [32m"@/components/providers/SessionProvider"[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 6 |[39m[0m
+[0m [90m 7 |[39m [36mconst[39m inter [33m=[39m [33mInter[39m({[0m
+[0m [90m 8 |[39m   subsets[33m:[39m [[32m"latin"[39m][33m,[39m[0m
+
+Import map: aliased to relative './src/components/providers/SessionProvider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./src/app/layout.tsx:5:1
+Module not found: Can't resolve '@/components/providers/SessionProvider'
+[0m [90m 3 |[39m [36mimport[39m [32m"./globals.css"[39m[33m;[39m[0m
+[0m [90m 4 |[39m [36mimport[39m [33mThemeProvider[39m [36mfrom[39m [32m"@/components/providers/ThemeProvider"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mSessionProvider[39m [36mfrom[39m [32m"@/components/providers/SessionProvider"[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 6 |[39m[0m
+[0m [90m 7 |[39m [36mconst[39m inter [33m=[39m [33mInter[39m({[0m
+[0m [90m 8 |[39m   subsets[33m:[39m [[32m"latin"[39m][33m,[39m[0m
+
+Import map: aliased to relative './src/components/providers/SessionProvider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled /dashboard in 25ms
+MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
+
+MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+MUI Grid: The `lg` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+ GET /dashboard 200 in 231ms
+ GET /api/auth/session 200 in 49ms
+ GET /api/auth/session 200 in 20ms
+ GET /api/auth/session 200 in 19ms
+ GET /favicon.ico 200 in 255ms
+ GET /favicon.ico?favicon.45db1c09.ico 200 in 257ms
+ GET /favicon.ico?favicon.45db1c09.ico 200 in 222ms
+ GET /favicon.ico 200 in 236ms
+ ✓ Compiled / in 20ms
+ GET / 200 in 138ms
+ GET /api/auth/session 200 in 13ms
+ GET /api/auth/session 200 in 13ms
+ GET /dashboard 200 in 16ms
+ GET /api/auth/session 200 in 14ms
+ GET /api/auth/session 200 in 10ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 18ms
+MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
+
+MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+MUI Grid: The `lg` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+ GET /dashboard 200 in 174ms
+ GET /api/auth/session 200 in 34ms
+ GET /api/auth/session 200 in 14ms
+ GET /api/auth/session 200 in 13ms
+ GET /favicon.ico?favicon.45db1c09.ico 200 in 231ms
+ ○ Compiling /dashboard/accounts ...
+ ✓ Compiled /dashboard/accounts in 522ms
+ GET /dashboard/accounts 200 in 536ms
+ GET /dashboard/accounts 200 in 10ms
+ ✓ Compiled /api/accounts in 188ms
+ GET /api/accounts 200 in 211ms
+ GET /api/accounts 200 in 8ms
+ GET /favicon.ico?favicon.45db1c09.ico 200 in 216ms
+ POST /api/accounts 201 in 37ms
+ GET /api/accounts 200 in 19ms
+ ○ Compiling /dashboard/transactions ...
+ ✓ Compiled /dashboard/transactions in 867ms
+ GET /dashboard/transactions 200 in 876ms
+ GET /api/accounts 200 in 24ms
+ GET /api/accounts 200 in 16ms
+ GET /api/transactions 200 in 277ms
+ ✓ Compiled /api/transactions in 277ms
+ GET /api/categories 200 in 291ms
+ GET /api/transactions 200 in 25ms
+ GET /api/categories 200 in 25ms
+ POST /api/transactions 201 in 38ms
+ GET /api/transactions 200 in 16ms
+ ○ Compiling /dashboard/reports ...
+ ✓ Compiled /dashboard/reports in 1312ms
+ GET /dashboard/reports 200 in 1322ms
+ ✓ Compiled /api/reports in 226ms
+ GET /api/reports?startDate=2024-12-31T11%3A00%3A00.000Z&endDate=2025-08-07T20%3A40%3A42.987Z 200 in 240ms
+ GET /api/reports?startDate=2024-12-31T11%3A00%3A00.000Z&endDate=2025-08-07T20%3A40%3A42.987Z 200 in 8ms
+ GET /dashboard/reports 200 in 13ms
+ ✓ Compiled /dashboard/reports in 4ms
+ GET /dashboard/reports 200 in 285ms
+ GET /dashboard/reports 200 in 18ms
+ GET /dashboard/reports 200 in 19ms
+ GET /dashboard/reports 200 in 15ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 120ms
+ GET /api/reports?startDate=2024-12-31T11%3A00%3A00.000Z&endDate=2025-08-07T20%3A41%3A59.988Z 200 in 195ms
+ GET /api/auth/session 200 in 194ms
+ GET /dashboard/reports 200 in 213ms
+ POST /api/auth/_log 200 in 37ms
+ POST /api/auth/_log 200 in 38ms
+ GET /api/auth/session 200 in 22ms
+ GET /api/reports?startDate=2024-12-31T11%3A00%3A00.000Z&endDate=2025-08-07T20%3A42%3A00.299Z 200 in 26ms
+ GET /api/auth/session 200 in 21ms
+ GET /api/auth/session 200 in 15ms
+ GET /api/reports?startDate=2024-12-31T11%3A00%3A00.000Z&endDate=2025-08-07T20%3A42%3A00.355Z 200 in 16ms
+ GET /api/reports?startDate=2024-12-31T11%3A00%3A00.000Z&endDate=2025-08-07T20%3A42%3A00.355Z 200 in 23ms
+ GET /favicon.ico?favicon.45db1c09.ico 200 in 225ms
+ ✓ Compiled /dashboard in 23ms
+ GET /dashboard 200 in 85ms
+ ✓ Compiled /dashboard/accounts in 19ms
+ GET /dashboard/accounts 200 in 90ms
+ GET /api/accounts 200 in 16ms
+ GET /api/accounts 200 in 10ms
+ ✓ Compiled /dashboard/transactions in 16ms
+ GET /dashboard/transactions 200 in 78ms
+ GET /api/categories 200 in 15ms
+ GET /api/accounts 200 in 17ms
+ GET /api/transactions 200 in 19ms
+ GET /api/categories 200 in 19ms
+ GET /api/accounts 200 in 20ms
+ GET /api/transactions 200 in 21ms
+ GET /dashboard/reports 200 in 31ms
+ GET /api/reports?startDate=2024-12-31T11%3A00%3A00.000Z&endDate=2025-08-07T20%3A43%3A04.340Z 200 in 14ms
+ GET /api/reports?startDate=2024-12-31T11%3A00%3A00.000Z&endDate=2025-08-07T20%3A43%3A04.340Z 200 in 10ms
+ ✓ Compiled in 88ms
+ GET /api/reports?startDate=2024-12-31T11%3A00%3A00.000Z&endDate=2025-08-07T20%3A43%3A48.286Z 200 in 16ms
+ GET /api/reports?startDate=2024-12-31T11%3A00%3A00.000Z&endDate=2025-08-07T20%3A43%3A48.286Z 200 in 14ms
+ GET / 200 in 26ms
+ ✓ Compiled /_not-found/page in 385ms
+ GET /profile 404 in 397ms
+ GET /profile 404 in 55ms
+ GET /api/auth/session 200 in 31ms
+ GET /api/auth/session 200 in 10ms
+ GET /dashboard/reports 200 in 221ms
+ GET /api/auth/session 200 in 14ms
+ GET /api/reports?startDate=2024-12-31T11%3A00%3A00.000Z&endDate=2025-08-07T20%3A44%3A14.003Z 200 in 17ms
+ GET /api/reports?startDate=2024-12-31T11%3A00%3A00.000Z&endDate=2025-08-07T20%3A44%3A14.039Z 200 in 13ms
+ GET /api/reports?startDate=2024-12-31T11%3A00%3A00.000Z&endDate=2025-08-07T20%3A44%3A14.039Z 200 in 11ms
+ GET /api/auth/csrf 200 in 26ms
+ POST /api/auth/signout 200 in 14ms
+ GET /dashboard/reports 200 in 63ms
+ GET /api/reports?startDate=2024-12-31T11%3A00%3A00.000Z&endDate=2025-08-07T20%3A44%3A24.778Z 401 in 16ms
+ GET /api/auth/session 200 in 17ms
+ GET / 200 in 12ms
+ GET /api/auth/session 200 in 15ms
+ ○ Compiling /auth/signin ...
+ ✓ Compiled /auth/signin in 505ms
+ GET /auth/signin 200 in 517ms
+ GET /api/auth/providers 200 in 33ms
+ GET /api/auth/csrf 200 in 23ms
+ POST /api/auth/callback/credentials 200 in 217ms
+ GET /api/auth/session 200 in 9ms
+ GET /dashboard 200 in 17ms
+ GET / 200 in 19ms
+ GET /api/auth/session 200 in 9ms
+ GET /api/auth/session 200 in 11ms
+ GET /dashboard 200 in 14ms
+ GET / 200 in 13ms
+ GET /api/auth/session 200 in 10ms
+ GET /api/auth/session 200 in 14ms
+ GET /dashboard 200 in 18ms
+ GET / 200 in 11ms
+ GET /api/auth/session 200 in 8ms
+ GET /api/auth/session 200 in 14ms
+ GET /dashboard 200 in 17ms
+ GET / 200 in 12ms
+ GET /api/auth/session 200 in 10ms
+ GET /api/auth/session 200 in 13ms
+ GET /dashboard 200 in 16ms
+ GET / 200 in 16ms
+ GET /api/auth/session 200 in 11ms
+ GET /api/auth/session 200 in 16ms
+ GET /dashboard 200 in 20ms
+ GET / 200 in 16ms
+ GET /api/auth/session 200 in 11ms
+ GET /api/auth/session 200 in 16ms
+ GET /dashboard 200 in 23ms
+ GET / 200 in 17ms
+ GET /api/auth/session 200 in 10ms
+ GET /api/auth/session 200 in 14ms
+ GET /dashboard 200 in 17ms
+ GET / 200 in 13ms
+ GET /api/auth/session 200 in 9ms
+ GET /api/auth/session 200 in 12ms
+ GET /dashboard 200 in 16ms
+ GET / 200 in 14ms
+ GET /api/auth/session 200 in 11ms
+ GET /api/auth/session 200 in 9ms
+ GET /dashboard 200 in 14ms
+ GET / 200 in 13ms
+ GET /api/auth/session 200 in 9ms
+ GET /api/auth/session 200 in 11ms
+ GET /dashboard 200 in 15ms
+ GET / 200 in 13ms
+ GET /api/auth/session 200 in 9ms
+ GET /api/auth/session 200 in 11ms
+ GET /dashboard 200 in 19ms
+ GET / 200 in 13ms
+ GET /api/auth/session 200 in 9ms
+ GET /api/auth/session 200 in 12ms
+ GET /dashboard 200 in 16ms
+ GET / 200 in 12ms
+ GET /api/auth/session 200 in 10ms
+ GET /api/auth/session 200 in 14ms
+ GET /dashboard 200 in 20ms
+ GET / 200 in 13ms
+ GET /api/auth/session 200 in 10ms
+ GET /api/auth/session 200 in 13ms
+ GET /dashboard 200 in 19ms
+ GET / 200 in 13ms
+ GET /api/auth/session 200 in 10ms
+ GET /api/auth/session 200 in 15ms
+ GET /dashboard 200 in 19ms
+ GET / 200 in 15ms
+ GET /api/auth/session 200 in 9ms
+ GET /api/auth/session 200 in 15ms
+ GET /dashboard 200 in 21ms
+ GET / 200 in 15ms
+ GET /api/auth/session 200 in 13ms
+ GET /api/auth/session 200 in 18ms
+ GET /dashboard 200 in 21ms
+ GET / 200 in 12ms
+ GET /api/auth/session 200 in 10ms
+ GET /api/auth/session 200 in 18ms
+ GET /dashboard 200 in 24ms
+ GET / 200 in 13ms
+ GET /api/auth/session 200 in 12ms
+ GET /api/auth/session 200 in 16ms
+ GET /dashboard 200 in 22ms
+ GET / 200 in 17ms
+ GET /api/auth/session 200 in 13ms
+ GET /api/auth/session 200 in 15ms
+ GET /dashboard 200 in 18ms
+ GET / 200 in 14ms
+ GET /api/auth/session 200 in 13ms
+ GET /api/auth/session 200 in 12ms
+ GET /dashboard 200 in 21ms
+ GET / 200 in 12ms
+ GET /api/auth/session 200 in 10ms
+ GET /api/auth/session 200 in 20ms
+ GET /dashboard 200 in 25ms
+ GET / 200 in 16ms
+ GET /api/auth/session 200 in 11ms
+ GET /api/auth/session 200 in 16ms
+ GET /dashboard 200 in 20ms
+ GET / 200 in 19ms
+ GET /api/auth/session 200 in 27ms
+ GET /api/auth/session 200 in 32ms
+ GET /dashboard 200 in 60ms
+ GET / 200 in 23ms
+ GET /api/auth/session 200 in 11ms
+ GET /api/auth/session 200 in 17ms
+ GET /dashboard 200 in 25ms
+ GET / 200 in 14ms
+ GET /api/auth/session 200 in 11ms
+ GET /api/auth/session 200 in 16ms
+ GET /dashboard 200 in 21ms
+ GET / 200 in 14ms
+ GET /api/auth/session 200 in 11ms
+ GET /api/auth/session 200 in 21ms
+ GET /dashboard 200 in 28ms
+ GET / 200 in 28ms
+ GET /api/auth/session 200 in 17ms
+ GET /api/auth/session 200 in 29ms
+ GET /dashboard 200 in 31ms
+ GET / 200 in 21ms
+ GET /api/auth/session 200 in 16ms
+ GET /api/auth/session 200 in 23ms
+ GET /dashboard 200 in 29ms
+ GET / 200 in 24ms
+ GET /api/auth/session 200 in 41ms
+ GET /api/auth/session 200 in 23ms
+ GET /dashboard 200 in 29ms
+ GET / 200 in 21ms
+ GET /api/auth/session 200 in 17ms
+ GET /api/auth/session 200 in 20ms
+ GET /dashboard 200 in 24ms
+ GET / 200 in 21ms
+ GET /api/auth/session 200 in 16ms
+ GET /api/auth/session 200 in 22ms
+ GET /dashboard 200 in 27ms
+ GET / 200 in 29ms
+ GET /api/auth/session 200 in 20ms
+ GET /api/auth/session 200 in 23ms
+ GET /dashboard 200 in 27ms
+ GET / 200 in 18ms
+ GET /api/auth/session 200 in 17ms
+ GET /api/auth/session 200 in 20ms
+ GET /dashboard 200 in 28ms
+ GET / 200 in 18ms
+ GET /api/auth/session 200 in 12ms
+ GET /api/auth/session 200 in 24ms
+ GET /dashboard 200 in 28ms
+ GET / 200 in 18ms
+ GET /api/auth/session 200 in 17ms
+ GET /api/auth/session 200 in 24ms
+ GET /dashboard 200 in 29ms
+ GET / 200 in 21ms
+ GET /api/auth/session 200 in 16ms
+ GET /api/auth/session 200 in 24ms
+ GET /dashboard 200 in 30ms
+ GET / 200 in 21ms
+ GET /api/auth/session 200 in 13ms
+ GET /api/auth/session 200 in 24ms
+ GET /dashboard 200 in 30ms
+ GET / 200 in 22ms
+ GET /api/auth/session 200 in 19ms
+ GET /api/auth/session 200 in 22ms
+ GET /dashboard 200 in 27ms
+ GET / 200 in 20ms
+ GET /api/auth/session 200 in 16ms
+ GET /api/auth/session 200 in 21ms
+ GET /dashboard 200 in 28ms
+ GET / 200 in 24ms
+ GET /api/auth/session 200 in 18ms
+ GET /api/auth/session 200 in 23ms
+ GET /dashboard 200 in 28ms
+ GET / 200 in 21ms
+ GET /api/auth/session 200 in 18ms
+ GET /api/auth/session 200 in 23ms
+ GET /dashboard 200 in 28ms
+ GET / 200 in 19ms
+ GET /api/auth/session 200 in 16ms
+ GET /api/auth/session 200 in 21ms
+ GET /dashboard 200 in 28ms
+ GET / 200 in 20ms
+ GET /api/auth/session 200 in 18ms
+ GET /api/auth/session 200 in 25ms
+ GET /dashboard 200 in 31ms
+ GET / 200 in 20ms
+ GET /api/auth/session 200 in 16ms
+ GET /api/auth/session 200 in 27ms
+ GET /dashboard 200 in 34ms
+ GET / 200 in 21ms
+ GET /api/auth/session 200 in 16ms
+ GET /api/auth/session 200 in 26ms
+ GET /dashboard 200 in 31ms
+ GET / 200 in 14ms
+ GET /api/auth/session 200 in 12ms
+ GET /api/auth/session 200 in 17ms
+ GET /dashboard 200 in 24ms
+ GET / 200 in 16ms
+ GET /api/auth/session 200 in 11ms
+ GET /api/auth/session 200 in 17ms
+ GET /dashboard 200 in 21ms
+ GET / 200 in 13ms
+ GET /api/auth/session 200 in 10ms
+ GET /api/auth/session 200 in 15ms
+ GET /dashboard 200 in 20ms
+ GET / 200 in 14ms
+ GET /api/auth/session 200 in 15ms
+ GET /api/auth/session 200 in 21ms
+ GET /dashboard 200 in 25ms
+ GET / 200 in 11ms
+ GET /api/auth/session 200 in 9ms
+ GET /api/auth/session 200 in 16ms
+ GET /dashboard 200 in 20ms
+ GET / 200 in 13ms
+ GET /api/auth/session 200 in 11ms
+ GET /api/auth/session 200 in 17ms
+ GET /dashboard 200 in 21ms
+ GET / 200 in 14ms
+ GET /api/auth/session 200 in 10ms
+ GET /api/auth/session 200 in 18ms
+ GET /dashboard 200 in 24ms
+ GET / 200 in 14ms
+ GET /api/auth/session 200 in 13ms
+ GET /api/auth/session 200 in 12ms
+ GET /dashboard 200 in 15ms
+ GET / 200 in 11ms
+ GET /api/auth/session 200 in 8ms
+ GET /api/auth/session 200 in 15ms
+ GET /dashboard 200 in 17ms
+ GET / 200 in 12ms
+ GET /api/auth/session 200 in 11ms
+ GET /api/auth/session 200 in 14ms
+ GET /dashboard 200 in 17ms
+ GET / 200 in 12ms
+ GET /api/auth/session 200 in 9ms
+ GET /api/auth/session 200 in 12ms
+ GET /dashboard 200 in 17ms
+ GET / 200 in 12ms
+ GET /api/auth/session 200 in 13ms
+ GET /api/auth/session 200 in 15ms
+ GET /dashboard 200 in 20ms
+ GET / 200 in 13ms
+ GET /api/auth/session 200 in 9ms
+ GET /api/auth/session 200 in 14ms
+ GET /dashboard 200 in 17ms
+ GET / 200 in 13ms
+ GET /api/auth/session 200 in 10ms
+ GET /api/auth/session 200 in 16ms
+ GET /dashboard 200 in 18ms
+ GET / 200 in 15ms
+ GET /api/auth/session 200 in 12ms
+ GET /api/auth/session 200 in 15ms
+ GET /dashboard 200 in 18ms
+ GET / 200 in 19ms
+ GET /api/auth/session 200 in 10ms
+ GET /api/auth/session 200 in 15ms
+ GET /dashboard 200 in 20ms
+ GET / 200 in 19ms
+ GET /api/auth/session 200 in 54ms
+ GET /api/auth/session 200 in 20ms
+ GET /dashboard 200 in 20ms
+ GET / 200 in 14ms
+ GET /api/auth/session 200 in 10ms
+ GET /api/auth/session 200 in 18ms
+ GET /dashboard 200 in 21ms
+ GET / 200 in 19ms
+ GET /api/auth/session 200 in 11ms
+ GET /api/auth/session 200 in 21ms
+ GET /dashboard 200 in 25ms
+ GET / 200 in 13ms
+ GET /api/auth/session 200 in 9ms
+ GET /api/auth/session 200 in 18ms
+ GET /dashboard 200 in 21ms
+ GET / 200 in 13ms
+ GET /api/auth/session 200 in 11ms
+ GET /api/auth/session 200 in 15ms
+ GET /dashboard 200 in 19ms
+ GET / 200 in 13ms
+ GET /api/auth/session 200 in 13ms
+ GET /api/auth/session 200 in 19ms
+ GET /dashboard 200 in 23ms
+ GET / 200 in 12ms
+ GET /api/auth/session 200 in 9ms
+ GET /api/auth/session 200 in 14ms
+ GET /dashboard 200 in 18ms
+ GET / 200 in 13ms
+ GET /api/auth/session 200 in 8ms
+ GET /api/auth/session 200 in 14ms
+ GET /dashboard 200 in 20ms
+ GET / 200 in 16ms
+ GET /api/auth/session 200 in 9ms
+ GET /api/auth/session 200 in 17ms
+ GET /dashboard 200 in 19ms
+ GET / 200 in 12ms
+ GET /api/auth/session 200 in 11ms
+ GET /api/auth/session 200 in 18ms
+ GET /dashboard 200 in 21ms
+ GET / 200 in 16ms
+ GET /api/auth/session 200 in 14ms
+ GET /api/auth/session 200 in 20ms
+ GET /dashboard 200 in 26ms
+ GET / 200 in 16ms
+ GET /api/auth/session 200 in 9ms
+ GET /api/auth/session 200 in 16ms
+ GET /dashboard 200 in 18ms
+ GET / 200 in 14ms
+ GET /api/auth/session 200 in 10ms
+ GET /api/auth/session 200 in 13ms
+ GET /dashboard 200 in 19ms
+ GET / 200 in 19ms
+ GET /api/auth/session 200 in 15ms
+ GET /api/auth/session 200 in 17ms
+ GET /dashboard 200 in 21ms
+ GET / 200 in 17ms
+ GET /api/auth/session 200 in 11ms
+ GET /api/auth/session 200 in 15ms
+ GET /dashboard 200 in 21ms
+ GET / 200 in 18ms
+ GET /api/auth/session 200 in 11ms
+ GET /api/auth/session 200 in 19ms
+ GET /dashboard 200 in 22ms
+ GET / 200 in 14ms
+ GET /api/auth/session 200 in 13ms
+ GET /api/auth/session 200 in 14ms
+ GET /dashboard 200 in 26ms
+ GET / 200 in 14ms
+ GET /api/auth/session 200 in 9ms
+ GET /api/auth/session 200 in 14ms
+ GET /dashboard 200 in 17ms
+ GET / 200 in 12ms
+ GET /api/auth/session 200 in 10ms
+ GET /api/auth/session 200 in 14ms
+ GET /dashboard 200 in 19ms
+ GET / 200 in 12ms
+ GET /api/auth/session 200 in 9ms
+ GET /api/auth/session 200 in 14ms
+ GET /dashboard 200 in 20ms
+ GET / 200 in 13ms
+ GET /api/auth/session 200 in 11ms
+ GET /api/auth/session 200 in 20ms
+ GET /dashboard 200 in 22ms
+ GET / 200 in 13ms
+ GET /api/auth/session 200 in 9ms
+ GET /api/auth/session 200 in 14ms
+ GET /dashboard 200 in 18ms
+ GET / 200 in 14ms
+ GET /api/auth/session 200 in 32ms
+ GET /api/auth/session 200 in 17ms
+ GET /dashboard 200 in 21ms
+ GET / 200 in 13ms
+ GET /api/auth/session 200 in 11ms
+ GET /api/auth/session 200 in 17ms
+ GET /dashboard 200 in 20ms
+ GET / 200 in 12ms
+ GET /api/auth/session 200 in 11ms
+ GET /api/auth/session 200 in 21ms
+ GET /dashboard 200 in 23ms
+ GET / 200 in 12ms
+ GET /api/auth/session 200 in 9ms
+ GET /api/auth/session 200 in 13ms
+ GET /dashboard 200 in 17ms
+ GET / 200 in 14ms
+ GET /api/auth/session 200 in 11ms
+ GET /api/auth/session 200 in 15ms
+ GET /dashboard 200 in 18ms
+ GET / 200 in 15ms
+ GET /api/auth/session 200 in 9ms
+ GET /api/auth/session 200 in 16ms
+ GET /dashboard 200 in 22ms
+ GET / 200 in 14ms
+ GET /api/auth/session 200 in 10ms
+ GET /api/auth/session 200 in 18ms
+ GET /dashboard 200 in 21ms
+ GET / 200 in 18ms
+ GET /api/auth/session 200 in 14ms
+ GET /api/auth/session 200 in 20ms
+ GET /dashboard 200 in 28ms
+ GET / 200 in 13ms
+ GET /api/auth/session 200 in 9ms
+ GET /api/auth/session 200 in 15ms
+ GET /dashboard 200 in 19ms
+ GET / 200 in 12ms
+ GET /api/auth/session 200 in 11ms
+ GET /api/auth/session 200 in 22ms
+ GET /dashboard 200 in 25ms
+ GET / 200 in 17ms
+ GET /api/auth/session 200 in 9ms
+ GET /api/auth/session 200 in 14ms
+ GET /dashboard 200 in 18ms
+ GET / 200 in 14ms
+ GET /api/auth/session 200 in 10ms
+ GET /api/auth/session 200 in 16ms
+ GET /dashboard 200 in 18ms
+ GET / 200 in 12ms
+ GET /api/auth/session 200 in 10ms
+ GET /api/auth/session 200 in 13ms
+ GET /dashboard 200 in 19ms
+ GET / 200 in 12ms
+ GET /api/auth/session 200 in 12ms
+ GET /api/auth/session 200 in 14ms
+ GET /dashboard 200 in 18ms
+ GET / 200 in 13ms
+ GET /api/auth/session 200 in 10ms
+ GET /api/auth/session 200 in 13ms
+ GET /dashboard 200 in 18ms
+ GET / 200 in 13ms
+ GET /api/auth/session 200 in 11ms
+ GET /api/auth/session 200 in 17ms
+ GET /dashboard 200 in 20ms
+ GET / 200 in 12ms
+ GET /api/auth/session 200 in 9ms
+ GET /api/auth/session 200 in 15ms
+ GET /dashboard 200 in 18ms
+ GET / 200 in 13ms
+ GET /api/auth/session 200 in 15ms
+ GET /api/auth/session 200 in 20ms
+ GET /dashboard 200 in 25ms
+ GET / 200 in 14ms
+ GET /api/auth/session 200 in 10ms
+ GET /api/auth/session 200 in 15ms
+ GET /dashboard 200 in 18ms
+ GET / 200 in 13ms
+ GET /api/auth/session 200 in 10ms
+ GET /api/auth/session 200 in 15ms
+ GET /dashboard 200 in 19ms
+ GET / 200 in 15ms
+ GET /api/auth/session 200 in 9ms
+ GET /api/auth/session 200 in 14ms
+ GET /dashboard 200 in 20ms
+ GET / 200 in 12ms
+ GET /api/auth/session 200 in 10ms
+ GET /api/auth/session 200 in 13ms
+ GET /dashboard 200 in 21ms
+ GET / 200 in 12ms
+ GET /api/auth/session 200 in 10ms
+ GET /api/auth/session 200 in 13ms
+ GET /dashboard 200 in 25ms
+MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
+
+MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+MUI Grid: The `lg` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+ GET /dashboard 200 in 119ms
+ GET / 200 in 34ms
+ GET /api/auth/session 200 in 13ms
+ GET /api/auth/session 200 in 9ms
+ GET /dashboard 200 in 14ms
+ GET /dashboard/accounts 200 in 38ms
+ GET /api/accounts 200 in 15ms
+ GET /api/accounts 200 in 9ms
+ GET /api/accounts 401 in 8ms
+ ✓ Compiled in 25ms
+ ✓ Compiled in 39ms
+ GET / 200 in 48ms
+ GET /api/auth/session 200 in 12ms
+ GET /api/auth/session 200 in 9ms
+ GET /dashboard 200 in 60ms
+ GET /dashboard/accounts 200 in 41ms
+ GET /api/accounts 200 in 13ms
+ GET /api/accounts 200 in 10ms
+ GET /dashboard/transactions 200 in 37ms
+ GET /api/accounts 200 in 20ms
+ GET /api/transactions 200 in 27ms
+ GET /api/categories 200 in 21ms
+ GET /api/accounts 200 in 20ms
+ GET /api/transactions 200 in 19ms
+ GET /api/categories 200 in 20ms
+ GET /dashboard/reports 200 in 34ms
+ GET /api/reports?startDate=2024-12-31T11%3A00%3A00.000Z&endDate=2025-08-07T20%3A51%3A58.958Z 200 in 27ms
+ GET /api/reports?startDate=2024-12-31T11%3A00%3A00.000Z&endDate=2025-08-07T20%3A51%3A58.958Z 200 in 11ms
+ GET /dashboard 200 in 34ms
+ ✓ Compiled in 456ms
+ GET /dashboard/accounts 200 in 72ms
+ GET /dashboard 200 in 79ms
+ GET /dashboard/accounts 200 in 25ms
+ GET /dashboard 200 in 25ms
+ ✓ Compiled in 18ms
+ ✓ Compiled in 17ms
+ GET /dashboard/accounts 200 in 95ms
+ GET /dashboard 200 in 95ms
+ GET /dashboard/accounts 200 in 56ms
+ GET /dashboard 200 in 50ms
+ GET /dashboard 200 in 66ms
+ GET /dashboard/accounts 200 in 65ms
+ GET /dashboard 200 in 16ms
+ GET /dashboard/accounts 200 in 19ms
+ GET / 200 in 61ms
+MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
+
+MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+MUI Grid: The `lg` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+ GET /dashboard 200 in 157ms
+ GET /api/auth/session 200 in 38ms
+ GET /api/accounts 200 in 67ms
+ GET /api/categories 200 in 69ms
+ POST /api/transactions 201 in 90ms
+ ✓ Compiled in 365ms
+ GET / 200 in 156ms
+ ○ Compiling /dashboard/customers ...
+ ✓ Compiled /dashboard/customers in 707ms
+ GET /dashboard/customers 200 in 832ms
+ GET /api/auth/session 200 in 55ms
+MUI Grid: The `item` prop has been removed and is no longer necessary. You can safely remove it.
+
+MUI Grid: The `xs` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+MUI Grid: The `sm` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+MUI Grid: The `md` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+MUI Grid: The `lg` prop has been removed. See https://mui.com/material-ui/migration/upgrade-to-grid-v2/ for migration instructions.
+
+ GET /dashboard 200 in 203ms
+ GET /api/auth/session 200 in 15ms
+ GET /dashboard/customers 200 in 34ms
+ ✓ Compiled /api/customers in 214ms
+Customers fetch error: TypeError: Cannot read properties of undefined (reading 'findMany')
+    at GET (src/app/api/customers/route.ts:30:44)
+  28 |     }
+  29 |
+> 30 |     const customers = await prisma.customer.findMany({
+     |                                            ^
+  31 |       where: whereClause,
+  32 |       include: {
+  33 |         invoices: {
+ GET /api/customers? 500 in 270ms
+Customers fetch error: TypeError: Cannot read properties of undefined (reading 'findMany')
+    at GET (src/app/api/customers/route.ts:30:44)
+  28 |     }
+  29 |
+> 30 |     const customers = await prisma.customer.findMany({
+     |                                            ^
+  31 |       where: whereClause,
+  32 |       include: {
+  33 |         invoices: {
+ GET /api/customers? 500 in 25ms
+ GET /dashboard/customers 200 in 77ms
+Customers fetch error: TypeError: Cannot read properties of undefined (reading 'findMany')
+    at GET (src/app/api/customers/route.ts:30:44)
+  28 |     }
+  29 |
+> 30 |     const customers = await prisma.customer.findMany({
+     |                                            ^
+  31 |       where: whereClause,
+  32 |       include: {
+  33 |         invoices: {
+ GET /api/customers? 500 in 42ms
+ GET /api/auth/session 200 in 44ms
+Customers fetch error: TypeError: Cannot read properties of undefined (reading 'findMany')
+    at GET (src/app/api/customers/route.ts:30:44)
+  28 |     }
+  29 |
+> 30 |     const customers = await prisma.customer.findMany({
+     |                                            ^
+  31 |       where: whereClause,
+  32 |       include: {
+  33 |         invoices: {
+ GET /api/customers? 500 in 33ms
+Customers fetch error: TypeError: Cannot read properties of undefined (reading 'findMany')
+    at GET (src/app/api/customers/route.ts:30:44)
+  28 |     }
+  29 |
+> 30 |     const customers = await prisma.customer.findMany({
+     |                                            ^
+  31 |       where: whereClause,
+  32 |       include: {
+  33 |         invoices: {
+ GET /api/customers? 500 in 28ms
+ ○ Compiling /dashboard/invoices ...
+ ✓ Compiled /dashboard/invoices in 555ms
+ GET /dashboard/invoices 200 in 568ms
+ ✓ Compiled /api/invoices in 242ms
+Invoices fetch error: TypeError: Cannot read properties of undefined (reading 'findMany')
+    at GET (src/app/api/invoices/route.ts:41:42)
+  39 |     }
+  40 |
+> 41 |     const invoices = await prisma.invoice.findMany({
+     |                                          ^
+  42 |       where: whereClause,
+  43 |       include: {
+  44 |         customer: {
+ GET /api/invoices? 500 in 274ms
+Invoices fetch error: TypeError: Cannot read properties of undefined (reading 'findMany')
+    at GET (src/app/api/invoices/route.ts:41:42)
+  39 |     }
+  40 |
+> 41 |     const invoices = await prisma.invoice.findMany({
+     |                                          ^
+  42 |       where: whereClause,
+  43 |       include: {
+  44 |         customer: {
+ GET /api/invoices? 500 in 23ms
+ GET /dashboard/invoices 200 in 77ms
+ GET /api/auth/session 200 in 29ms
+Invoices fetch error: TypeError: Cannot read properties of undefined (reading 'findMany')
+    at GET (src/app/api/invoices/route.ts:41:42)
+  39 |     }
+  40 |
+> 41 |     const invoices = await prisma.invoice.findMany({
+     |                                          ^
+  42 |       where: whereClause,
+  43 |       include: {
+  44 |         customer: {
+ GET /api/invoices? 500 in 52ms
+Invoices fetch error: TypeError: Cannot read properties of undefined (reading 'findMany')
+    at GET (src/app/api/invoices/route.ts:41:42)
+  39 |     }
+  40 |
+> 41 |     const invoices = await prisma.invoice.findMany({
+     |                                          ^
+  42 |       where: whereClause,
+  43 |       include: {
+  44 |         customer: {
+ GET /api/invoices? 500 in 29ms
+Invoices fetch error: TypeError: Cannot read properties of undefined (reading 'findMany')
+    at GET (src/app/api/invoices/route.ts:41:42)
+  39 |     }
+  40 |
+> 41 |     const invoices = await prisma.invoice.findMany({
+     |                                          ^
+  42 |       where: whereClause,
+  43 |       include: {
+  44 |         customer: {
+ GET /api/invoices? 500 in 28ms
+ GET /dashboard/customers 200 in 32ms
+Customers fetch error: TypeError: Cannot read properties of undefined (reading 'findMany')
+    at GET (src/app/api/customers/route.ts:30:44)
+  28 |     }
+  29 |
+> 30 |     const customers = await prisma.customer.findMany({
+     |                                            ^
+  31 |       where: whereClause,
+  32 |       include: {
+  33 |         invoices: {
+ GET /api/customers? 500 in 33ms
+Customers fetch error: TypeError: Cannot read properties of undefined (reading 'findMany')
+    at GET (src/app/api/customers/route.ts:30:44)
+  28 |     }
+  29 |
+> 30 |     const customers = await prisma.customer.findMany({
+     |                                            ^
+  31 |       where: whereClause,
+  32 |       include: {
+  33 |         invoices: {
+ GET /api/customers? 500 in 28ms
+Customer creation error: TypeError: Cannot read properties of undefined (reading 'findFirst')
+    at POST (src/app/api/customers/route.ts:117:53)
+  115 |     // Check if customer with same email already exists (if email provided)
+  116 |     if (email) {
+> 117 |       const existingCustomer = await prisma.customer.findFirst({
+      |                                                     ^
+  118 |         where: {
+  119 |           userId: session.user.id,
+  120 |           email: email,
+ POST /api/customers 500 in 59ms
+Customer creation error: TypeError: Cannot read properties of undefined (reading 'findFirst')
+    at POST (src/app/api/customers/route.ts:117:53)
+  115 |     // Check if customer with same email already exists (if email provided)
+  116 |     if (email) {
+> 117 |       const existingCustomer = await prisma.customer.findFirst({
+      |                                                     ^
+  118 |         where: {
+  119 |           userId: session.user.id,
+  120 |           email: email,
+ POST /api/customers 500 in 58ms
+Customer creation error: TypeError: Cannot read properties of undefined (reading 'findFirst')
+    at POST (src/app/api/customers/route.ts:117:53)
+  115 |     // Check if customer with same email already exists (if email provided)
+  116 |     if (email) {
+> 117 |       const existingCustomer = await prisma.customer.findFirst({
+      |                                                     ^
+  118 |         where: {
+  119 |           userId: session.user.id,
+  120 |           email: email,
+ POST /api/customers 500 in 58ms
+Customer creation error: TypeError: Cannot read properties of undefined (reading 'findFirst')
+    at POST (src/app/api/customers/route.ts:117:53)
+  115 |     // Check if customer with same email already exists (if email provided)
+  116 |     if (email) {
+> 117 |       const existingCustomer = await prisma.customer.findFirst({
+      |                                                     ^
+  118 |         where: {
+  119 |           userId: session.user.id,
+  120 |           email: email,
+ POST /api/customers 500 in 54ms
+Customer creation error: TypeError: Cannot read properties of undefined (reading 'findFirst')
+    at POST (src/app/api/customers/route.ts:117:53)
+  115 |     // Check if customer with same email already exists (if email provided)
+  116 |     if (email) {
+> 117 |       const existingCustomer = await prisma.customer.findFirst({
+      |                                                     ^
+  118 |         where: {
+  119 |           userId: session.user.id,
+  120 |           email: email,
+ POST /api/customers 500 in 57ms
+Customer creation error: TypeError: Cannot read properties of undefined (reading 'findFirst')
+    at POST (src/app/api/customers/route.ts:117:53)
+  115 |     // Check if customer with same email already exists (if email provided)
+  116 |     if (email) {
+> 117 |       const existingCustomer = await prisma.customer.findFirst({
+      |                                                     ^
+  118 |         where: {
+  119 |           userId: session.user.id,
+  120 |           email: email,
+ POST /api/customers 500 in 55ms
+Customer creation error: TypeError: Cannot read properties of undefined (reading 'findFirst')
+    at POST (src/app/api/customers/route.ts:117:53)
+  115 |     // Check if customer with same email already exists (if email provided)
+  116 |     if (email) {
+> 117 |       const existingCustomer = await prisma.customer.findFirst({
+      |                                                     ^
+  118 |         where: {
+  119 |           userId: session.user.id,
+  120 |           email: email,
+ POST /api/customers 500 in 54ms
+ ✓ Compiled in 23ms
+Customers fetch error: TypeError: Cannot read properties of undefined (reading 'findMany')
+    at GET (src/app/api/customers/route.ts:30:44)
+  28 |     }
+  29 |
+> 30 |     const customers = await prisma.customer.findMany({
+     |                                            ^
+  31 |       where: whereClause,
+  32 |       include: {
+  33 |         invoices: {
+ GET /api/customers? 500 in 36ms
+ ✓ Compiled in 24ms
+ ✓ Compiled in 24ms
+ GET /api/auth/session 200 in 78ms
+ ✓ Compiled in 26ms
+ ✓ Compiled in 23ms
+ ✓ Compiled in 21ms
+ GET /dashboard/customers 200 in 174ms
+ GET /api/customers 401 in 9ms
+ ✓ Compiled in 21ms
+ GET /dashboard/customers 200 in 93ms
+Customer creation error: TypeError: Cannot read properties of undefined (reading 'create')
+    at POST (src/app/api/customers/route.ts:132:43)
+  130 |     }
+  131 |
+> 132 |     const customer = await prisma.customer.create({
+      |                                           ^
+  133 |       data: {
+  134 |         name,
+  135 |         email,
+ POST /api/customers 500 in 61ms
+ GET /api/auth/session 200 in 87ms
+Invoices fetch error: TypeError: Cannot read properties of undefined (reading 'findMany')
+    at GET (src/app/api/invoices/route.ts:41:42)
+  39 |     }
+  40 |
+> 41 |     const invoices = await prisma.invoice.findMany({
+     |                                          ^
+  42 |       where: whereClause,
+  43 |       include: {
+  44 |         customer: {
+ GET /api/invoices? 500 in 67ms
+Invoices fetch error: TypeError: Cannot read properties of undefined (reading 'findMany')
+    at GET (src/app/api/invoices/route.ts:41:42)
+  39 |     }
+  40 |
+> 41 |     const invoices = await prisma.invoice.findMany({
+     |                                          ^
+  42 |       where: whereClause,
+  43 |       include: {
+  44 |         customer: {
+ GET /api/invoices? 500 in 33ms
+ GET /dashboard/invoices 200 in 79ms
+Invoices fetch error: TypeError: Cannot read properties of undefined (reading 'findMany')
+    at GET (src/app/api/invoices/route.ts:41:42)
+  39 |     }
+  40 |
+> 41 |     const invoices = await prisma.invoice.findMany({
+     |                                          ^
+  42 |       where: whereClause,
+  43 |       include: {
+  44 |         customer: {
+ GET /api/invoices? 500 in 37ms
+ GET /api/auth/session 200 in 38ms
+Invoices fetch error: TypeError: Cannot read properties of undefined (reading 'findMany')
+    at GET (src/app/api/invoices/route.ts:41:42)
+  39 |     }
+  40 |
+> 41 |     const invoices = await prisma.invoice.findMany({
+     |                                          ^
+  42 |       where: whereClause,
+  43 |       include: {
+  44 |         customer: {
+ GET /api/invoices? 500 in 34ms
+Invoices fetch error: TypeError: Cannot read properties of undefined (reading 'findMany')
+    at GET (src/app/api/invoices/route.ts:41:42)
+  39 |     }
+  40 |
+> 41 |     const invoices = await prisma.invoice.findMany({
+     |                                          ^
+  42 |       where: whereClause,
+  43 |       include: {
+  44 |         customer: {
+ GET /api/invoices? 500 in 31ms
+ GET /dashboard/invoices/create 404 in 40ms
+ GET /dashboard/invoices/create 404 in 43ms
+ GET /api/auth/session 200 in 28ms
+ GET /api/auth/session 200 in 11ms
+ GET /dashboard/invoices 200 in 69ms
+Invoices fetch error: TypeError: Cannot read properties of undefined (reading 'findMany')
+    at GET (src/app/api/invoices/route.ts:41:42)
+  39 |     }
+  40 |
+> 41 |     const invoices = await prisma.invoice.findMany({
+     |                                          ^
+  42 |       where: whereClause,
+  43 |       include: {
+  44 |         customer: {
+ GET /api/invoices? 500 in 57ms
+ GET /api/auth/session 200 in 67ms
+Invoices fetch error: TypeError: Cannot read properties of undefined (reading 'findMany')
+    at GET (src/app/api/invoices/route.ts:41:42)
+  39 |     }
+  40 |
+> 41 |     const invoices = await prisma.invoice.findMany({
+     |                                          ^
+  42 |       where: whereClause,
+  43 |       include: {
+  44 |         customer: {
+ GET /api/invoices? 500 in 32ms
+Invoices fetch error: TypeError: Cannot read properties of undefined (reading 'findMany')
+    at GET (src/app/api/invoices/route.ts:41:42)
+  39 |     }
+  40 |
+> 41 |     const invoices = await prisma.invoice.findMany({
+     |                                          ^
+  42 |       where: whereClause,
+  43 |       include: {
+  44 |         customer: {
+ GET /api/invoices? 500 in 29ms
+ GET /dashboard/customers 200 in 37ms
+ ✓ Compiled /api/setup-accounts in 306ms
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+Setup accounts error: Error [PrismaClientKnownRequestError]: 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+    at async POST (src/app/api/setup-accounts/route.ts:60:28)
+  58 |     ]
+  59 |
+> 60 |     const createdAccounts = await Promise.all(
+     |                            ^
+  61 |       defaultAccounts.map(account =>
+  62 |         prisma.businessAccount.create({
+  63 |           data: { {
+  code: 'P2003',
+  meta: [Object],
+  clientVersion: '6.10.1'
+}
+ POST /api/setup-accounts 500 in 341ms
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+Setup accounts error: Error [PrismaClientKnownRequestError]: 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+    at async POST (src/app/api/setup-accounts/route.ts:60:28)
+  58 |     ]
+  59 |
+> 60 |     const createdAccounts = await Promise.all(
+     |                            ^
+  61 |       defaultAccounts.map(account =>
+  62 |         prisma.businessAccount.create({
+  63 |           data: { {
+  code: 'P2003',
+  meta: [Object],
+  clientVersion: '6.10.1'
+}
+ POST /api/setup-accounts 500 in 360ms
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+Customers fetch error: TypeError: Cannot read properties of undefined (reading 'findMany')
+    at GET (src/app/api/customers/route.ts:30:44)
+  28 |     }
+  29 |
+> 30 |     const customers = await prisma.customer.findMany({
+     |                                            ^
+  31 |       where: whereClause,
+  32 |       include: {
+  33 |         invoices: {
+ GET /api/customers? 500 in 59ms
+Customers fetch error: TypeError: Cannot read properties of undefined (reading 'findMany')
+    at GET (src/app/api/customers/route.ts:30:44)
+  28 |     }
+  29 |
+> 30 |     const customers = await prisma.customer.findMany({
+     |                                            ^
+  31 |       where: whereClause,
+  32 |       include: {
+  33 |         invoices: {
+ GET /api/customers? 500 in 29ms
+Invoices fetch error: TypeError: Cannot read properties of undefined (reading 'findMany')
+    at GET (src/app/api/invoices/route.ts:41:42)
+  39 |     }
+  40 |
+> 41 |     const invoices = await prisma.invoice.findMany({
+     |                                          ^
+  42 |       where: whereClause,
+  43 |       include: {
+  44 |         customer: {
+ GET /api/invoices? 500 in 58ms
+Invoices fetch error: TypeError: Cannot read properties of undefined (reading 'findMany')
+    at GET (src/app/api/invoices/route.ts:41:42)
+  39 |     }
+  40 |
+> 41 |     const invoices = await prisma.invoice.findMany({
+     |                                          ^
+  42 |       where: whereClause,
+  43 |       include: {
+  44 |         customer: {
+ GET /api/invoices? 500 in 33ms
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+Setup accounts error: Error [PrismaClientKnownRequestError]: 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+    at async POST (src/app/api/setup-accounts/route.ts:60:28)
+  58 |     ]
+  59 |
+> 60 |     const createdAccounts = await Promise.all(
+     |                            ^
+  61 |       defaultAccounts.map(account =>
+  62 |         prisma.businessAccount.create({
+  63 |           data: { {
+  code: 'P2003',
+  meta: [Object],
+  clientVersion: '6.10.1'
+}
+ POST /api/setup-accounts 500 in 53ms
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+Setup accounts error: Error [PrismaClientKnownRequestError]: 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+    at async POST (src/app/api/setup-accounts/route.ts:60:28)
+  58 |     ]
+  59 |
+> 60 |     const createdAccounts = await Promise.all(
+     |                            ^
+  61 |       defaultAccounts.map(account =>
+  62 |         prisma.businessAccount.create({
+  63 |           data: { {
+  code: 'P2003',
+  meta: [Object],
+  clientVersion: '6.10.1'
+}
+ POST /api/setup-accounts 500 in 78ms
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+Customers fetch error: TypeError: Cannot read properties of undefined (reading 'findMany')
+    at GET (src/app/api/customers/route.ts:30:44)
+  28 |     }
+  29 |
+> 30 |     const customers = await prisma.customer.findMany({
+     |                                            ^
+  31 |       where: whereClause,
+  32 |       include: {
+  33 |         invoices: {
+ GET /api/customers? 500 in 49ms
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+prisma:error 
+Invalid `prisma.businessAccount.create()` invocation:
+
+
+Foreign key constraint violated on the foreign key
+Customers fetch error: TypeError: Cannot read properties of undefined (reading 'findMany')
+    at GET (src/app/api/customers/route.ts:30:44)
+  28 |     }
+  29 |
+> 30 |     const customers = await prisma.customer.findMany({
+     |                                            ^
+  31 |       where: whereClause,
+  32 |       include: {
+  33 |         invoices: {
+ GET /api/customers? 500 in 28ms
+ GET / 200 in 29ms
+ GET /api/customers 401 in 10ms
+ GET /dashboard/invoices 200 in 36ms
+ GET /api/auth/session 200 in 64ms
+ ✓ Compiled in 25ms
+ ✓ Compiled in 24ms
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sunpeng/AmplifiBI/amplifibi/.next/server/app/api/setup-accounts/[__metadata_id__]/route/app-paths-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sunpeng/AmplifiBI/amplifibi/.next/server/app/api/setup-accounts/[__metadata_id__]/route/app-paths-manifest.json'
+}
+ ✓ Compiled in 98ms
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 642ms
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.5rs5zwfkbat'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.5rs5zwfkbat'
+}
+[Error: ENOENT: no such file or directory, open '/Users/sunpeng/AmplifiBI/amplifibi/.next/server/app/api/setup-accounts/[__metadata_id__]/route/app-paths-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sunpeng/AmplifiBI/amplifibi/.next/server/app/api/setup-accounts/[__metadata_id__]/route/app-paths-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.xu5nk6kijbs'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.xu5nk6kijbs'
+}
+[Error: ENOENT: no such file or directory, open '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.pr9pjpdnbd8'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.pr9pjpdnbd8'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sunpeng/AmplifiBI/amplifibi/.next/server/app/api/customers/[__metadata_id__]/route/app-paths-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sunpeng/AmplifiBI/amplifibi/.next/server/app/api/customers/[__metadata_id__]/route/app-paths-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.rvhgo6tuga'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.rvhgo6tuga'
+}
+[Error: ENOENT: no such file or directory, open '/Users/sunpeng/AmplifiBI/amplifibi/.next/server/app/api/customers/[__metadata_id__]/route/app-paths-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sunpeng/AmplifiBI/amplifibi/.next/server/app/api/customers/[__metadata_id__]/route/app-paths-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.xjkfaltb1vj'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.xjkfaltb1vj'
+}
+[Error: ENOENT: no such file or directory, open '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.1amfeuinqnb'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.1amfeuinqnb'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sunpeng/AmplifiBI/amplifibi/.next/server/app/api/auth/[...nextauth]/[__metadata_id__]/route/app-paths-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sunpeng/AmplifiBI/amplifibi/.next/server/app/api/auth/[...nextauth]/[__metadata_id__]/route/app-paths-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.xtzgdpuiwnk'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.xtzgdpuiwnk'
+}
+[Error: ENOENT: no such file or directory, open '/Users/sunpeng/AmplifiBI/amplifibi/.next/server/app/api/auth/[...nextauth]/[__metadata_id__]/route/app-paths-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sunpeng/AmplifiBI/amplifibi/.next/server/app/api/auth/[...nextauth]/[__metadata_id__]/route/app-paths-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.a0lgtik1s1n'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.a0lgtik1s1n'
+}
+[Error: ENOENT: no such file or directory, open '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.qhgvs991q78'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.qhgvs991q78'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sunpeng/AmplifiBI/amplifibi/.next/server/app/api/auth/[...nextauth]/[__metadata_id__]/route/app-paths-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sunpeng/AmplifiBI/amplifibi/.next/server/app/api/auth/[...nextauth]/[__metadata_id__]/route/app-paths-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sunpeng/AmplifiBI/amplifibi/.next/server/app/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sunpeng/AmplifiBI/amplifibi/.next/server/app/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.a4151al5x3h'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.a4151al5x3h'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.9nzpsdtft48'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.9nzpsdtft48'
+}
+[Error: ENOENT: no such file or directory, open '/Users/sunpeng/AmplifiBI/amplifibi/.next/server/app/api/auth/[...nextauth]/[__metadata_id__]/route/app-paths-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sunpeng/AmplifiBI/amplifibi/.next/server/app/api/auth/[...nextauth]/[__metadata_id__]/route/app-paths-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open '/Users/sunpeng/AmplifiBI/amplifibi/.next/server/app/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sunpeng/AmplifiBI/amplifibi/.next/server/app/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.2lnmh4sr69z'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.2lnmh4sr69z'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.y3fq25403vk'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.y3fq25403vk'
+}
+[Error: ENOENT: no such file or directory, open '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.2u7u2ox8j6i'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.2u7u2ox8j6i'
+}
+[Error: ENOENT: no such file or directory, open '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.hl9up3pqeeo'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.hl9up3pqeeo'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sunpeng/AmplifiBI/amplifibi/.next/server/app/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sunpeng/AmplifiBI/amplifibi/.next/server/app/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.rxims0rk48e'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.rxims0rk48e'
+}
+[Error: ENOENT: no such file or directory, open '/Users/sunpeng/AmplifiBI/amplifibi/.next/server/app/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sunpeng/AmplifiBI/amplifibi/.next/server/app/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.z9wugccw64d'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.z9wugccw64d'
+}
+[Error: ENOENT: no such file or directory, open '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.scs1yeyxdah'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.scs1yeyxdah'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sunpeng/AmplifiBI/amplifibi/.next/server/app/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sunpeng/AmplifiBI/amplifibi/.next/server/app/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.yh7edj7owb8'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.yh7edj7owb8'
+}
+[Error: ENOENT: no such file or directory, open '/Users/sunpeng/AmplifiBI/amplifibi/.next/server/app/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sunpeng/AmplifiBI/amplifibi/.next/server/app/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.bsrqlobimvh'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.bsrqlobimvh'
+}
+[Error: ENOENT: no such file or directory, open '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.dynpu9xw4gi'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.dynpu9xw4gi'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sunpeng/AmplifiBI/amplifibi/.next/server/app/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sunpeng/AmplifiBI/amplifibi/.next/server/app/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.9kurxcg5ewi'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.9kurxcg5ewi'
+}
+[Error: ENOENT: no such file or directory, open '/Users/sunpeng/AmplifiBI/amplifibi/.next/server/app/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sunpeng/AmplifiBI/amplifibi/.next/server/app/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.6guxehrgcy4'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.6guxehrgcy4'
+}
+[Error: ENOENT: no such file or directory, open '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.yewp50j4bei'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/sunpeng/AmplifiBI/amplifibi/.next/static/development/_buildManifest.js.tmp.yewp50j4bei'
+}
+[?25h

@@ -77,12 +77,14 @@ CREATE TABLE "transactions" (
     "categoryId" TEXT,
     "bankTransactionId" TEXT,
     "bankImported" BOOLEAN NOT NULL DEFAULT false,
+    "invoiceId" TEXT,
     "userId" TEXT NOT NULL,
     "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" DATETIME NOT NULL,
     CONSTRAINT "transactions_debitAccountId_fkey" FOREIGN KEY ("debitAccountId") REFERENCES "business_accounts" ("id") ON DELETE RESTRICT ON UPDATE CASCADE,
     CONSTRAINT "transactions_creditAccountId_fkey" FOREIGN KEY ("creditAccountId") REFERENCES "business_accounts" ("id") ON DELETE RESTRICT ON UPDATE CASCADE,
     CONSTRAINT "transactions_categoryId_fkey" FOREIGN KEY ("categoryId") REFERENCES "categories" ("id") ON DELETE SET NULL ON UPDATE CASCADE,
+    CONSTRAINT "transactions_invoiceId_fkey" FOREIGN KEY ("invoiceId") REFERENCES "invoices" ("id") ON DELETE SET NULL ON UPDATE CASCADE,
     CONSTRAINT "transactions_userId_fkey" FOREIGN KEY ("userId") REFERENCES "users" ("id") ON DELETE CASCADE ON UPDATE CASCADE
 );
 
@@ -97,6 +99,64 @@ CREATE TABLE "categories" (
     "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" DATETIME NOT NULL,
     CONSTRAINT "categories_userId_fkey" FOREIGN KEY ("userId") REFERENCES "users" ("id") ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+-- CreateTable
+CREATE TABLE "customers" (
+    "id" TEXT NOT NULL PRIMARY KEY,
+    "name" TEXT NOT NULL,
+    "email" TEXT,
+    "phone" TEXT,
+    "address" TEXT,
+    "city" TEXT,
+    "state" TEXT,
+    "postalCode" TEXT,
+    "country" TEXT DEFAULT 'New Zealand',
+    "companyName" TEXT,
+    "taxNumber" TEXT,
+    "paymentTerms" INTEGER NOT NULL DEFAULT 30,
+    "userId" TEXT NOT NULL,
+    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updatedAt" DATETIME NOT NULL,
+    CONSTRAINT "customers_userId_fkey" FOREIGN KEY ("userId") REFERENCES "users" ("id") ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+-- CreateTable
+CREATE TABLE "invoices" (
+    "id" TEXT NOT NULL PRIMARY KEY,
+    "invoiceNumber" TEXT NOT NULL,
+    "status" TEXT NOT NULL DEFAULT 'DRAFT',
+    "issueDate" DATETIME NOT NULL,
+    "dueDate" DATETIME NOT NULL,
+    "paidDate" DATETIME,
+    "subtotal" DECIMAL NOT NULL DEFAULT 0,
+    "taxRate" DECIMAL NOT NULL DEFAULT 0.15,
+    "taxAmount" DECIMAL NOT NULL DEFAULT 0,
+    "total" DECIMAL NOT NULL DEFAULT 0,
+    "paidAmount" DECIMAL NOT NULL DEFAULT 0,
+    "notes" TEXT,
+    "termsConditions" TEXT,
+    "customerId" TEXT NOT NULL,
+    "userId" TEXT NOT NULL,
+    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updatedAt" DATETIME NOT NULL,
+    CONSTRAINT "invoices_customerId_fkey" FOREIGN KEY ("customerId") REFERENCES "customers" ("id") ON DELETE RESTRICT ON UPDATE CASCADE,
+    CONSTRAINT "invoices_userId_fkey" FOREIGN KEY ("userId") REFERENCES "users" ("id") ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+-- CreateTable
+CREATE TABLE "invoice_items" (
+    "id" TEXT NOT NULL PRIMARY KEY,
+    "description" TEXT NOT NULL,
+    "quantity" DECIMAL NOT NULL DEFAULT 1,
+    "unitPrice" DECIMAL NOT NULL,
+    "total" DECIMAL NOT NULL,
+    "taxRate" DECIMAL NOT NULL DEFAULT 0.15,
+    "taxAmount" DECIMAL NOT NULL DEFAULT 0,
+    "invoiceId" TEXT NOT NULL,
+    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updatedAt" DATETIME NOT NULL,
+    CONSTRAINT "invoice_items_invoiceId_fkey" FOREIGN KEY ("invoiceId") REFERENCES "invoices" ("id") ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 -- CreateIndex
@@ -119,3 +179,6 @@ CREATE UNIQUE INDEX "business_accounts_bankAccountId_key" ON "business_accounts"
 
 -- CreateIndex
 CREATE UNIQUE INDEX "transactions_bankTransactionId_key" ON "transactions"("bankTransactionId");
+
+-- CreateIndex
+CREATE UNIQUE INDEX "invoices_invoiceNumber_key" ON "invoices"("invoiceNumber");

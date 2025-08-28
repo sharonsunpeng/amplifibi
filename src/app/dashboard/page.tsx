@@ -1,5 +1,7 @@
 'use client'
 
+import { useState } from 'react'
+import { useRouter } from 'next/navigation'
 import {
   Box,
   Grid,
@@ -17,6 +19,7 @@ import {
   Assessment,
   Add,
 } from '@mui/icons-material'
+import QuickTransactionForm from '@/components/transactions/QuickTransactionForm'
 
 const StatCard = ({ title, value, icon, color, trend }: any) => (
   <Card>
@@ -47,6 +50,31 @@ const StatCard = ({ title, value, icon, color, trend }: any) => (
 )
 
 export default function DashboardPage() {
+  const [openTransactionForm, setOpenTransactionForm] = useState(false)
+  const router = useRouter()
+
+  const handleTransactionSaved = () => {
+    // Refresh dashboard data here
+    console.log('Transaction saved - refreshing dashboard data')
+  }
+
+  const handleConnectBank = () => {
+    // For now, just show an alert - bank integration would go here
+    alert('Bank integration feature coming soon! This will connect to your bank account via Akahu API.')
+  }
+
+  const handleCreateInvoice = () => {
+    router.push('/dashboard/invoices/create')
+  }
+
+  const handleAddExpense = () => {
+    setOpenTransactionForm(true)
+  }
+
+  const handleViewReports = () => {
+    router.push('/dashboard/reports')
+  }
+
   return (
     <Box>
       <Box sx={{ mb: 4, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
@@ -62,6 +90,7 @@ export default function DashboardPage() {
           variant="contained"
           startIcon={<Add />}
           sx={{ borderRadius: 2 }}
+          onClick={() => setOpenTransactionForm(true)}
         >
           Add Transaction
         </Button>
@@ -127,16 +156,36 @@ export default function DashboardPage() {
                 Quick Actions
               </Typography>
               <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
-                <Button variant="outlined" fullWidth sx={{ justifyContent: 'flex-start' }}>
+                <Button 
+                  variant="outlined" 
+                  fullWidth 
+                  sx={{ justifyContent: 'flex-start' }}
+                  onClick={handleConnectBank}
+                >
                   Connect Bank Account
                 </Button>
-                <Button variant="outlined" fullWidth sx={{ justifyContent: 'flex-start' }}>
+                <Button 
+                  variant="outlined" 
+                  fullWidth 
+                  sx={{ justifyContent: 'flex-start' }}
+                  onClick={handleCreateInvoice}
+                >
                   Create Invoice
                 </Button>
-                <Button variant="outlined" fullWidth sx={{ justifyContent: 'flex-start' }}>
+                <Button 
+                  variant="outlined" 
+                  fullWidth 
+                  sx={{ justifyContent: 'flex-start' }}
+                  onClick={handleAddExpense}
+                >
                   Add Expense
                 </Button>
-                <Button variant="outlined" fullWidth sx={{ justifyContent: 'flex-start' }}>
+                <Button 
+                  variant="outlined" 
+                  fullWidth 
+                  sx={{ justifyContent: 'flex-start' }}
+                  onClick={handleViewReports}
+                >
                   View Reports
                 </Button>
               </Box>
@@ -175,6 +224,13 @@ export default function DashboardPage() {
           </Card>
         </Grid>
       </Grid>
+
+      {/* Quick Transaction Form */}
+      <QuickTransactionForm
+        open={openTransactionForm}
+        onClose={() => setOpenTransactionForm(false)}
+        onSave={handleTransactionSaved}
+      />
     </Box>
   )
 }

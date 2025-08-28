@@ -179,14 +179,19 @@ export async function POST(request: NextRequest) {
       const creditAccount = accounts.find(a => a.id === creditAccountId)!
 
       // Calculate balance changes based on account types
+      // Standard accounting equation: Assets = Liabilities + Equity + Revenue - Expenses
+      // Normal balances: Assets (Debit), Liabilities (Credit), Equity (Credit), Revenue (Credit), Expenses (Debit)
       const getBalanceChange = (accountType: string, isDebit: boolean) => {
-        // Assets and Expenses increase with debits, decrease with credits
-        // Liabilities, Equity, and Revenue increase with credits, decrease with debits
+        // Assets and Expenses have normal debit balances (increase with debits, decrease with credits)
         if (['ASSET', 'EXPENSE'].includes(accountType)) {
           return isDebit ? amount : -amount
-        } else {
+        } 
+        // Liabilities, Equity, and Revenue have normal credit balances (increase with credits, decrease with debits)
+        else if (['LIABILITY', 'EQUITY', 'REVENUE'].includes(accountType)) {
           return isDebit ? -amount : amount
         }
+        // Default fallback
+        return 0
       }
 
       await tx.businessAccount.update({
