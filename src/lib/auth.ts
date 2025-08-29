@@ -47,6 +47,9 @@ export const authOptions: NextAuthOptions = {
           email: user.email,
           name: user.name,
           subscriptionTier: user.subscriptionTier,
+          gstRegistered: user.gstRegistered,
+          gstNumber: user.gstNumber,
+          gstReturnFrequency: user.gstReturnFrequency,
         }
       }
     })
@@ -58,6 +61,9 @@ export const authOptions: NextAuthOptions = {
     async jwt({ token, user }) {
       if (user) {
         token.subscriptionTier = user.subscriptionTier
+        token.gstRegistered = user.gstRegistered
+        token.gstNumber = user.gstNumber
+        token.gstReturnFrequency = user.gstReturnFrequency
       }
       return token
     },
@@ -65,6 +71,9 @@ export const authOptions: NextAuthOptions = {
       if (session.user) {
         session.user.id = token.sub!
         session.user.subscriptionTier = token.subscriptionTier as string
+        session.user.gstRegistered = token.gstRegistered as boolean
+        session.user.gstNumber = token.gstNumber as string | null
+        session.user.gstReturnFrequency = token.gstReturnFrequency as string
       }
       return session
     }

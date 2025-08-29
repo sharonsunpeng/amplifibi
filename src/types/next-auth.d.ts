@@ -3,6 +3,9 @@ import NextAuth from "next-auth"
 declare module "next-auth" {
   interface User {
     subscriptionTier: string
+    gstRegistered?: boolean
+    gstNumber?: string | null
+    gstReturnFrequency?: string
   }
   
   interface Session {
@@ -12,6 +15,9 @@ declare module "next-auth" {
       name?: string | null
       image?: string | null
       subscriptionTier: string
+      gstRegistered?: boolean
+      gstNumber?: string | null
+      gstReturnFrequency?: string
     }
   }
 }
